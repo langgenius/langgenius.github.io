@@ -1,0 +1,39 @@
+.header {
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  color: #111928;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.ctrl {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  width: 182px;
+  height: 36px;
+  margin-right: 32px;
+  cursor: pointer;
+  background: url(../../assets/logo.svg) center center no-repeat;
+}
+
+.view {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

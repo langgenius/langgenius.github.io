@@ -1,0 +1,11 @@
+.container {
+  background: url(../../assets/bg.svg) center center no-repeat;   
+}
+
+.img {
+  background: #F3F4F6 url(../../assets/block-1.svg) center top no-repeat;
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  width: 1280px;
+  height: 800px;
+}

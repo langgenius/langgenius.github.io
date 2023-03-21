@@ -1,0 +1,39 @@
+.box {
+  min-width: 550px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header, .footer {
+  background: rgba(29, 27, 27, 0.726);
+  text-align: center;
+  height: 60px;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+ }
+
+.container {
+  text-align: center;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.left {
+  width: 200px;        
+  background: rgba(95, 179, 235, 0.972);
+}
+
+.right {
+  width: 150px;           
+  background: rgb(231, 105, 2);
+}
