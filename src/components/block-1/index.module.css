@@ -1,5 +1,72 @@
 .container {
-  background: url(../../assets/bg.svg) center center no-repeat;   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: contain;
+  background: url(../../assets/bg.svg)no-repeat;   
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alph {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid linear-gradient(198.23deg, #FFFFFF 22.34%, rgba(255, 255, 255, 0.8) 117.18%);
+}
+
+.r {
+  margin-right: 4px;
+}
+
+.l {
+  margin-left: 4px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #4B5563;
+}
+
+.link {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #1C64F2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 154.02%;
+  color: #111928;
+}
+
+.tip {
+  font-size: 20px;
+  text-align: center;
+  color: #6B7280;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0 80px 0;
 }
 
 .img {

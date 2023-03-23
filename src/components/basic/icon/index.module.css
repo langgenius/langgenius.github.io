@@ -1,0 +1,19 @@
+.container {
+  height: 18px;
+  width: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.horn {
+  background-image: url(../../../assets/icons/horn.svg);
+}
+
+.arrow-blue-left {
+  background-image: url(../../../assets/icons/arrow-blue-left.svg);
+}
+
+.github {
+  background-image: url(../../../assets//icons/github.svg);
+}
