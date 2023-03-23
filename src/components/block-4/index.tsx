@@ -3,7 +3,6 @@ import cn from "classnames";
 import Container from "../basic/container";
 import Card from "../basic/card";
 import Icon from "../basic/icon";
-import Button from "../basic/button";
 import s from "./index.module.css";
 
 const Block4 = () => {
@@ -34,7 +33,7 @@ const Block4 = () => {
   return (
     <Container className={s.container}>
       <div className={s.title}>{t("与广受欢迎的 LLMs 一同进步")}</div>
-      <div className={s.content}>
+      <div className={s.box}>
         {data.map((item) => {
           return (
             <Card className={s.card}>

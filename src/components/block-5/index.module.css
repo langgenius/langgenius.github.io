@@ -1,0 +1,108 @@
+.container {
+  background-size: cover;
+  background-image: url(../../assets/block-5-bg.svg);
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+
+.box {
+  display: flex;
+  gap: 24px;
+  color: #111928;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.card {
+  width: 440px;
+  padding: 48px 32px;
+}
+
+.gray {
+  color: #6b7280;
+}
+
+.header {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 34px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.rank {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #9ca3af;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.rankactive {
+  background: #111928;
+  color: #ffffff;
+}
+
+.divider {
+  width: 376px;
+  height: 1px;
+  background: #e5e7eb;
+  border-radius: 2px;
+  margin: 24px 0;
+}
+
+.footertitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 16px;
+}
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.peopleitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  height: 28px;
+  background: #F3F4F6;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.peopleactive{
+  background: #E1EFFE;
+  color: #1E429F;
+}
