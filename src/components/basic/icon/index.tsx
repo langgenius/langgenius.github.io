@@ -3,7 +3,8 @@ import cn from 'classnames';
 import s from './index.module.css';
 
 interface IProps {
-  type: 'horn' | 'arrow-blue-left' | 'github'
+  type: 'horn' | 'arrow-blue-left' | 'github' | 'old-man' | 'writing'
+  | 'computer' | 'robot' | 'magic' | 'arrow-white-left'
   className?: string;
 }
 const Icon = ({ type, className }: IProps) => {

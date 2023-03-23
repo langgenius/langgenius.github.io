@@ -1,5 +1,6 @@
-import Container from '../basic/container';
+
 import { useTranslation } from 'react-i18next';
+import Container from '../basic/container';
 import Button from '../basic/button';
 import Icon from '../basic/icon';
 import s from './index.module.css';
@@ -24,8 +25,8 @@ const Block1 = () => {
         <div className={s.tip}>{t('快速、直观地开发可运营的 GPT 应用。即使是非开发人员也能轻松完成。')}</div>
         <div className={s.tip}>{t('LangGenius 正在进步成为最好的开源 LLMOps 平台。')}</div>
         <div className={s.btn}>
-          <Button size='large'>
-            <Icon type='github' />
+          <Button size='large' type='white'>
+            <Icon type='github' className={s.btnicon} />
             GitHub
           </Button>
           <Button size='large'>{t('体验云服务')}</Button>

@@ -1,5 +1,4 @@
 .btn {
-  background-color: #1A56DB;
   color: #ffffff;
   border-radius: 8px;
   font-size: 14px;
@@ -8,15 +7,31 @@
   justify-content: center;
 }
 
+.default {
+  background-color: #1A56DB;
+}
+
+.white {
+  background-color: #ffffff;
+  border: 1px solid #E5E7EB;
+  color: #1F2A37;
+}
+
 .small {
   padding: 2px 10px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .middle {
   padding: 5.5px 10px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .large {
   padding: 8px 30px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
