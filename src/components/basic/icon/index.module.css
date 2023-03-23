@@ -61,3 +61,11 @@
 .clipboard-list {
   background-image: url(../../../assets//icons/clipboard-list.svg);
 }
+
+.dot {
+  background-image: url(../../../assets//icons/dot.svg);
+}
+
+.arrow-blue-w-left {
+  background-image: url(../../../assets/icons/arrow-blue-w-left.svg);
+}

@@ -1,6 +1,7 @@
 .container {
   background-size: contain;
-  background: url(../../assets/bg.svg)no-repeat;   
+  background-image: url(../../assets/bg.svg);  
+  background-repeat: no-repeat; 
 }
 
 .top {
