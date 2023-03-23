@@ -1,7 +1,5 @@
 .container {
-  background-size: cover;
-  background-image: url(../../assets/block-5-bg.svg);
-  background-repeat: no-repeat;
+  background-color: #F9FAFB;
 }
 
 .title {

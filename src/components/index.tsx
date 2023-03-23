@@ -5,6 +5,7 @@ import Block2 from './block-2';
 import Block3 from './block-3';
 import Block4 from './block-4';
 import Block5 from './block-5';
+import Footer from './footer';
 import s from './index.module.css';
 
 const Container = () => {
@@ -20,7 +21,7 @@ const Container = () => {
           <Block5 />
         </div>
       </div>
-      <div className={s.footer}>#footer</div>
+      <Footer />
     </div>
   )
 };
