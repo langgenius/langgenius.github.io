@@ -4,7 +4,8 @@ import s from './index.module.css';
 
 interface IProps {
   type: 'horn' | 'arrow-blue-left' | 'github' | 'old-man' | 'writing'
-  | 'computer' | 'robot' | 'magic' | 'arrow-white-left'
+  | 'computer' | 'robot' | 'magic' | 'arrow-white-left' | 'vector'
+  | 'terminal' | 'paper-airplane' | 'clipboard-list' 
   className?: string;
 }
 const Icon = ({ type, className }: IProps) => {

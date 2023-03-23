@@ -16,5 +16,13 @@
   "扮演前端面试官，为你检验技能水平并针对你的回答给出优化建议。": "扮演前端面试官，为你检验技能水平并针对你的回答给出优化建议。",
   "You can build unlimited creative,practical apps of AI.": "You can build unlimited creative,practical apps of AI.",
   "Go to app": "Go to app",
-  "Learn to Build": "Learn to Build"
+  "Learn to Build": "Learn to Build",
+  "快速创建 AI 应用": "快速创建 AI 应用",
+  "简单几步就可以快速生成漂亮的 AI 应用，无需编码完成基于 GPT 的产品，你甚至可将它部署到 Vercel。": "简单几步就可以快速生成漂亮的 AI 应用，无需编码完成基于 GPT 的产品，你甚至可将它部署到 Vercel。",
+  "增强且易用的 WebAPI": "增强且易用的 WebAPI",
+  "省掉后端开发环节，在 LangGenius 上直接部署 WebAPI，基于 HybridPrompt 语法开发强大应用，每个应用都能独立鉴权。": "省掉后端开发环节，在 LangGenius 上直接部署 WebAPI，基于 HybridPrompt 语法开发强大应用，每个应用都能独立鉴权。",
+  "运营可视化": "运营可视化",
+  "在易用的界面上分析你的应用状态、用量与费用，基于日志标记数据集，持续微调你的模型，让你的 AI 应用日渐成长。": "在易用的界面上分析你的应用状态、用量与费用，基于日志标记数据集，持续微调你的模型，让你的 AI 应用日渐成长。",
+  "释放 GPT 的全部潜力": "释放 GPT 的全部潜力",
+  "基于你的内容训练专属 AI 模型。利用上下文增强能力突破 GPT 的 4096 字节的限制。": "基于你的内容训练专属 AI 模型。利用上下文增强能力突破 GPT 的 4096 字节的限制。"
 }

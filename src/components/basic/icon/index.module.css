@@ -45,3 +45,19 @@
 .arrow-white-left {
   background-image: url(../../../assets//icons/arrow-white-left.svg);
 }
+
+.vector {
+  background-image: url(../../../assets//icons/vector.svg);
+}
+
+.terminal {
+  background-image: url(../../../assets//icons/terminal.svg);
+}
+
+.paper-airplane {
+  background-image: url(../../../assets//icons/paper-airplane.svg);
+}
+
+.clipboard-list {
+  background-image: url(../../../assets//icons/clipboard-list.svg);
+}
