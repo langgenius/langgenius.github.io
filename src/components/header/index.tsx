@@ -12,7 +12,7 @@ const Header = () => {
           <label>文档</label>
         </div>
         <div className={s.view}>
-          <label>登陆</label>
+          <label>登录</label>
           <Button>获知更新</Button>
         </div>
       </div>
