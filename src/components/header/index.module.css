@@ -5,12 +5,6 @@
   align-items: center;
 }
 
-label {
-  color: #111928;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .center {
   display: flex;
   justify-content: space-around;
@@ -25,7 +19,7 @@ label {
 }
 
 .logo {
-  width: 182px;
+  width: 116px;
   height: 36px;
   margin-right: 32px;
   cursor: pointer;

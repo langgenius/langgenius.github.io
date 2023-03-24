@@ -43,7 +43,7 @@ const Block2 = () => {
           return(
             <Card className={s.card}>
               <div className={s.icon}>
-                <Icon type={item.icon as any} />
+                <Icon className={s.iconcontent} type={item.icon as any} />
               </div>
               <div className={s.header}>
                 {item.title}

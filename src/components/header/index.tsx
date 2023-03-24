@@ -1,22 +1,23 @@
 import Button from '../basic/button';
+import Link from '../basic/link';
 import s from './index.module.css';
 
 const Header = () => {
   return(
-    <div className={s.header}>
+    <nav className={s.header}>
       <div className={s.center}>
         <div className={s.ctrl}>
           <div className={s.logo} />
-          <label>案例</label>
-          <label>特性</label>
-          <label>文档</label>
+          <Link>案例</Link>
+          <Link>特性</Link>
+          <Link>文档</Link>
         </div>
         <div className={s.view}>
-          <label>登录</label>
+          <Link>登录</Link>
           <Button>获知更新</Button>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
