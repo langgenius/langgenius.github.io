@@ -1,16 +1,18 @@
+import { useTranslation } from 'react-i18next';
 import Button from '../basic/button';
 import Link from '../basic/link';
 import s from './index.module.css';
 
 const Header = () => {
+  const { t } = useTranslation();
   return(
     <nav className={s.header}>
       <div className={s.center}>
         <div className={s.ctrl}>
           <div className={s.logo} />
-          <Link>案例</Link>
-          <Link>特性</Link>
-          <Link>文档</Link>
+          <Link href='#'>{t('案例')}</Link>
+          <Link href='#'>{t('特性')}</Link>
+          <Link href='#'>{t('文档')}</Link>
         </div>
         <div className={s.view}>
           <Link>登录</Link>

@@ -9,10 +9,11 @@ a {
   padding: 4px 10px;
   border-radius: 8px;
   cursor: pointer;
+  background: transparent;
+  transition: background .7s;
 }
 
 a:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243, 244, 246/var(--tw-bg-opacity));
+  background: rgb(243, 244, 246);
 }
   

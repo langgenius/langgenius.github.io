@@ -5,16 +5,27 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .default {
   background-color: #1A56DB;
+  transition: background-color .7s;
+}
+
+.default:hover {
+  background-color: #1E429F;
 }
 
 .white {
   background-color: #ffffff;
   border: 1px solid #E5E7EB;
   color: #1F2A37;
+  transition: background-color .7s;
+}
+
+.white:hover {
+  background-color: #F3F4F6;
 }
 
 .small {
