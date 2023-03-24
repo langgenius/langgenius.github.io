@@ -9,14 +9,14 @@ const Header = () => {
     <nav className={s.header}>
       <div className={s.center}>
         <div className={s.ctrl}>
-          <div className={s.logo} />
+          <div className={s.logo}></div>
           <Link href='#'>{t('案例')}</Link>
           <Link href='#'>{t('特性')}</Link>
           <Link href='#'>{t('文档')}</Link>
         </div>
         <div className={s.view}>
-          <Link>登录</Link>
-          <Button>获知更新</Button>
+          <Link>{t('登录')}</Link>
+          <Button>{t('获知更新')}</Button>
         </div>
       </div>
     </nav>
