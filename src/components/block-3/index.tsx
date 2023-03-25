@@ -38,7 +38,7 @@ const Block3 = () => {
     },
   ];
   return (
-    <Container className={s.container}>
+    <Container id='features' className={s.container}>
       <div className={s.left}>
         {data.map(item => {
           return(

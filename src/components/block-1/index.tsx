@@ -3,6 +3,7 @@ import Container from "../basic/container";
 import Button from "../basic/button";
 import Icon from "../basic/icon";
 import s from "./index.module.css";
+import i18next from "i18next";
 
 const Block1 = () => {
   const { t } = useTranslation();
@@ -17,10 +18,10 @@ const Block1 = () => {
           <div className={s.text}>
             {t("v0.1 云端版内测后，LangGenius 将在 GitHub 开源")}
           </div>
-          <div className={s.link}>
+          <a className={s.link} target='_blank' rel='noreferrer' href={`https://docs.langgenius.ai${i18next.language === 'zh' ? '/zh-hans' : ''}/community/product-roadmap`}>
             {t("产品 Roadmap")}
             <Icon type="arrow-blue-left" className={s.l} />
-          </div>
+          </a>
         </div>
         <div className={s.title}>{t("10 倍速创作你的 AI 应用")}</div>
         <div className={s.tip}>

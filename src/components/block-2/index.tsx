@@ -34,7 +34,7 @@ const Block2 = () => {
     }
   ];
   return (
-    <Container className={s.container}>
+    <Container id='examples' className={s.container}>
       <div className={s.title}>
         {t("AI 创意嘉年华，全都由 LangGenius 创建")}
       </div>
