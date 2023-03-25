@@ -8,9 +8,9 @@ interface IProps {
 
 const Container = ({ children, className }: IProps) => {
   return(
-    <div className={cn(s.container, className)}>
+    <section className={cn(s.container, className)}>
       {children}
-    </div>
+    </section>
   );
 };
 

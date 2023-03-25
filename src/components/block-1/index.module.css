@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 1px solid linear-gradient(198.23deg, #FFFFFF 22.34%, rgba(255, 255, 255, 0.8) 117.18%);
+  /* border: 1px solid; */
 }
 
 .r {
