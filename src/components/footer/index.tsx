@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+import i18n from "../../local";
 import Icon from "../basic/icon";
 import s from "./index.module.css";
 
@@ -15,6 +17,7 @@ const list2 = [
   { text: "Status OK" },
 ];
 const Footer = () => {
+  const [t] = useTranslation();
   return (
     <div className={s.container}>
       <div className={s.top}>
@@ -48,8 +51,10 @@ const Footer = () => {
         <div className={s.copywrite}>© 2023 LangGenius, Inc. </div>
         <div className={s.language}>
           <Icon type="language" />
-          语言
+          {t("语言")}
         </div>
+        <div onClick={() => i18n.changeLanguage("en")}>English</div>
+        <div onClick={() => i18n.changeLanguage("zh")}>简体中文</div>
       </div>
     </div>
   );
