@@ -1,7 +1,7 @@
 .container {
   background-size: contain;
-  background-image: url(../../assets/bg.svg);  
-  background-repeat: no-repeat; 
+  background-image: url(../../assets/bg.svg);
+  background-repeat: no-repeat;
 }
 
 .top {
@@ -34,14 +34,14 @@
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-  color: #4B5563;
+  color: #4b5563;
 }
 
 .link {
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-  color: #1C64F2;
+  color: #1c64f2;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@
 .tip {
   font-size: 20px;
   text-align: center;
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .btn {
@@ -71,9 +71,19 @@
   margin-right: 8px;
 }
 
+.coming {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  flex: 1;
+  padding: 2px 8px;
+  margin-left: 8px;
+}
+
 .img {
-  background: #F3F4F6 url(../../assets/block-1.svg) center top no-repeat;
-  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.04);
+  background: #f3f4f6 url(../../assets/block-1.svg) center top no-repeat;
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0px 10px 10px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
   width: 1280px;
   height: 800px;

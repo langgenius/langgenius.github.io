@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Container from "../basic/container";
 import Button from "../basic/button";
@@ -7,8 +6,6 @@ import s from "./index.module.css";
 
 const Block1 = () => {
   const { t } = useTranslation();
-  const [githubText, setGithubText] = useState("GitHub");
-  const [experienceText, setExperienceText] = useState(t('体验云服务'));
   return (
     <Container className={s.container}>
       <div className={s.top}>
@@ -35,7 +32,7 @@ const Block1 = () => {
           {t("LangGenius 正在进步成为最好的开源 LLMOps 平台。")}
         </div>
         <div className={s.btn}>
-          <Button
+          {/* <Button
             size="large"
             type="white"
             onMouseEnter={() => setGithubText("Coming soon")}
@@ -43,13 +40,10 @@ const Block1 = () => {
           >
             <Icon type="github" className={s.btnicon} />
             {githubText}
-          </Button>
-          <Button
-            size="large"
-            onMouseEnter={() => setExperienceText("Coming soon")}
-            onMouseLeave={() => setExperienceText(t('体验云服务'))}
-          >
-            {experienceText}
+          </Button> */}
+          <Button size="large">
+            {t("体验云服务")}
+            <div className={s.coming}>Coming Soon</div>
           </Button>
         </div>
       </div>
