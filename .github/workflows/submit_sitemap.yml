@@ -1,0 +1,20 @@
+name: Submit Sitemap to Google
+
+on:
+  push:
+    branches:
+      - main  # Replace "main" with the name of your default branch, if different.
+
+jobs:
+  submit_sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Add any build steps necessary for your project here.
+
+    - name: Submit sitemap to Google
+      run: |
+        curl https://www.google.com/ping?sitemap=https://langgenius.ai/sitemap.xml
