@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import i18n from "../../local";
@@ -27,12 +28,26 @@ const list1 = [
 ];
 
 const list2 = [
-  { text: "Creators" },
-  { text: "Terms of Service" },
+  {
+    text: "Creators",
+    // props: {
+    //   to: "/about",
+    //   target: "_blank",
+    //   rel: "noreferrer",
+    // },
+  },
+  { 
+    text: "Terms of Service",
+    props: {
+      to: "/terms-of-service",
+      target: "_blank",
+      rel: "noreferrer",
+    },
+  },
   {
     text: "Privacy Policy",
     props: {
-      href: "https://langgenius.notion.site/Privacy-Policy-46a4c083600541b3a77e7dd8fcfc0508",
+      href: "/privacy-policy",
       target: "_blank",
       rel: "noreferrer",
     },
@@ -72,7 +87,7 @@ const Footer = () => {
           </div>
           <div className={s.list}>
             {list2.map((l2, index) => {
-              return <a className={s.item} key={index} {...(l2.props || {})}>{l2.text}</a>;
+              return <Link className={s.item} key={index} to={l2.props?.href || ''} {...(l2.props || {})}>{l2.text}</Link>;
             })}
           </div>
         </div>
