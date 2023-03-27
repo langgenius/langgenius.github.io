@@ -1,8 +1,10 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import Container from "../basic/container";
 import Button from "../basic/button";
 import Icon from "../basic/icon";
 import s from "./index.module.css";
+import blockBg from "../../assets/block-1.png";
 import i18next from "i18next";
 
 const Block1 = () => {
@@ -18,7 +20,14 @@ const Block1 = () => {
           <div className={s.text}>
             {t("v0.1 云端版内测后，LangGenius 将在 GitHub 开源")}
           </div>
-          <a className={s.link} target='_blank' rel='noreferrer' href={`https://docs.langgenius.ai${i18next.language === 'zh' ? '/zh-hans' : ''}/community/product-roadmap`}>
+          <a
+            className={s.link}
+            target="_blank"
+            rel="noreferrer"
+            href={`https://docs.langgenius.ai${
+              i18next.language === "zh" ? "/zh-hans" : ""
+            }/community/product-roadmap`}
+          >
             {t("产品 Roadmap")}
             <Icon type="arrow-blue-left" className={s.l} />
           </a>
@@ -44,11 +53,14 @@ const Block1 = () => {
           </Button> */}
           <Button size="large">
             {t("体验云服务")}
-            <div className={s.coming}>Coming Soon</div>
+            <div className={s.coming}>{t("即将上线")}</div>
           </Button>
         </div>
       </div>
-      <div className={s.img} />
+      <div className={s.imgcontainer}>
+        <img alt="" src={blockBg} className={s.img} />
+        <div className={s.imgsmall} />
+      </div>
     </Container>
   );
 };

@@ -1,7 +1,30 @@
-.content {
+.box {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
+@media only screen and (max-width: 750px) {
+  .box {
+    width: 750px;
+  }
+}
+
+/* 小设备 (平板电脑和大型手机，750 像素及以上) */
+@media only screen and (min-width: 750) {
+  .box {
+    width: 750px;
+  }
+}
+
+/* 大型设备（笔记本电脑/台式机，992 像素及以上）*/
+@media only screen and (min-width: 992px) {
+  .box {
+    width: 992px;
+  }
+} 
+
 
 .card {
   width: 260px;

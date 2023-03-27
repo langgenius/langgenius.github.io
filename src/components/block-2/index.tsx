@@ -1,3 +1,4 @@
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Container from '../basic/container';
 import Card from '../basic/card';
@@ -38,10 +39,10 @@ const Block2 = () => {
       <div className={s.title}>
         {t("AI 创意嘉年华，全都由 LangGenius 创建")}
       </div>
-      <div className={s.content}>
-        {data.map(item => {
+      <div className={s.box}>
+        {data.map((item, index) => {
           return(
-            <Card className={s.card}>
+            <Card className={s.card} key={index}>
               <div className={s.icon}>
                 <Icon className={s.iconcontent} type={item.icon as any} />
               </div>

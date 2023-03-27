@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Container from '../basic/container';
@@ -55,7 +56,7 @@ const Block3 = () => {
         })}
       </div>
       <div className={s.img}>
-        <img alt='' src={activeImg} />
+        {/* <img alt='' src={activeImg} className={s.inner} /> */}
       </div>
     </Container>
   );
