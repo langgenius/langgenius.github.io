@@ -21,7 +21,7 @@
 /* 大型设备（笔记本电脑/台式机，992 像素及以上）*/
 @media only screen and (min-width: 992px) {
   .box {
-    width: 992px;
+    width: 100%;
   }
 } 
 

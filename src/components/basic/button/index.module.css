@@ -10,7 +10,7 @@
 
 .default {
   background-color: #1A56DB;
-  transition: background-color .7s;
+  transition: background-color .4s;
 }
 
 .default:hover {
@@ -21,7 +21,7 @@
   background-color: #ffffff;
   border: 1px solid #E5E7EB;
   color: #1F2A37;
-  transition: background-color .7s;
+  transition: background-color .4s;
 }
 
 .white:hover {

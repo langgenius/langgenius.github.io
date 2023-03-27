@@ -1,4 +1,6 @@
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import { Menu, Transition } from "@headlessui/react";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import i18n from "../../local";
@@ -9,7 +11,9 @@ const list1 = [
   {
     text: "Product Roadmap",
     props: {
-      href: `https://docs.langgenius.ai${i18next.language === 'zh' ? '/zh-hans' : ''}/community/product-roadmap`,
+      href: `https://docs.langgenius.ai${
+        i18next.language === "zh" ? "/zh-hans" : ""
+      }/community/product-roadmap`,
       target: "_blank",
       rel: "noreferrer",
     },
@@ -19,7 +23,7 @@ const list1 = [
     icon: "github",
     text: "GitHub",
     props: {
-      href: 'https://github.com/langgenius',
+      href: "https://github.com/langgenius",
       target: "_blank",
       rel: "noreferrer",
     },
@@ -36,7 +40,7 @@ const list2 = [
     //   rel: "noreferrer",
     // },
   },
-  { 
+  {
     text: "Terms of Service",
     props: {
       to: "/terms-of-service",
@@ -66,7 +70,6 @@ const Footer = () => {
   return (
     <div className={s.container}>
       <div className={s.top}>
-        <div className={s.bg} />
         <div className={s.brand}>
           <div className={s.logo} />
           <div className={s.text}>
@@ -87,7 +90,16 @@ const Footer = () => {
           </div>
           <div className={s.list}>
             {list2.map((l2, index) => {
-              return <Link className={s.item} key={index} to={l2.props?.href || ''} {...(l2.props || {})}>{l2.text}</Link>;
+              return (
+                <Link
+                  className={s.item}
+                  key={index}
+                  to={l2.props?.href || ""}
+                  {...(l2.props || {})}
+                >
+                  {l2.text}
+                </Link>
+              );
             })}
           </div>
         </div>
@@ -95,11 +107,35 @@ const Footer = () => {
       <div className={s.bottom}>
         <div className={s.copywrite}>© 2023 LangGenius, Inc. </div>
         <div className={s.language}>
-          <Icon type="language" />
-          {t("语言")}
+          <Menu as="div" className="relative inline-block text-left">
+            <div>
+              <Menu.Button className="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                {t("语言")}
+                <Icon type="language" />
+              </Menu.Button>
+            </div>
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-100"
+              enterFrom="transform opacity-0 scale-95"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-75"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-95"
+            >
+              <Menu.Items>
+                <Menu.Item key={"English"} as={Fragment}>
+                  <div onClick={() => i18n.changeLanguage("en")}>English</div>
+                </Menu.Item>
+                <Menu.Item key={"简体中文"} as={Fragment}>
+                <div onClick={() => i18n.changeLanguage("zh")}>简体中文</div>
+                </Menu.Item>
+              </Menu.Items>
+            </Transition>
+          </Menu>
         </div>
-        <div onClick={() => i18n.changeLanguage("en")}>English</div>
-        <div onClick={() => i18n.changeLanguage("zh")}>简体中文</div>
+        {/* <div onClick={() => i18n.changeLanguage("en")}>English</div>
+        <div onClick={() => i18n.changeLanguage("zh")}>简体中文</div> */}
       </div>
     </div>
   );

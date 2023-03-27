@@ -10,7 +10,7 @@ a {
   border-radius: 8px;
   cursor: pointer;
   background: transparent;
-  transition: background .7s;
+  transition: background .4s;
 }
 
 a:hover {

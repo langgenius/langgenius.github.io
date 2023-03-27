@@ -1,22 +1,20 @@
 .container {
-  background: #ffffff;
-  padding: 0 320px;
+  background-color: #ffffff;
+  background-image: url(../../assets/footer-bg.svg);
+  background-position: bottom right;
+  padding: 0 120px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 .top {
   display: flex;
   align-items: center;
   position: relative;
-}
-
-.bg {
-  position: absolute;
-  width: 897px;
-  height: 897px;
-  filter: blur(100px);
-  background: url(../../assets/footer-bg.svg);
-  bottom: 0;
-  z-index: 1;
 }
 
 .brand {
@@ -43,9 +41,6 @@
   display: flex;
   gap: 120px;
   margin-top: 80px;
-  position: absolute;
-  right: 0;
-  z-index: 10;
 }
 
 .list {

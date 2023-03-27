@@ -12,7 +12,7 @@ const Home = () => {
       <Block2 />
       <Block3 />
       <Block4 />
-      {/* <Block5 /> */}
+      <Block5 />
     </>
   )
 };

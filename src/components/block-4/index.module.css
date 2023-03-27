@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+@media only screen and (max-width: 1500px) {
+  .box {
+    width: 998px;
+  }
+}
+
 .card {
   width: 320px;
   height: 366px;
