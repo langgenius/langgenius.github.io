@@ -19,7 +19,14 @@
 }
 
 /* 大型设备（笔记本电脑/台式机，992 像素及以上）*/
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1510px) {
+  .box {
+    width: 850px;
+  }
+} 
+
+/* 大型设备（笔记本电脑/台式机，992 像素及以上）*/
+@media only screen and (min-width: 1510px) {
   .box {
     width: 100%;
   }

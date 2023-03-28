@@ -6,12 +6,6 @@
   justify-content: center;
 }
 
-@media only screen and (max-width: 1500px) {
-  .box {
-    width: 998px;
-  }
-}
-
 .card {
   width: 320px;
   height: 366px;
@@ -83,4 +77,17 @@
 .block4-3 {
   background-image: url(../../assets/block4-3.svg);
   background-repeat: repeat-x;
+}
+
+
+@media only screen and (max-width: 1500px) {
+  .card {
+    width: 270px;
+    height: 366px;
+    padding: 12px;
+  }
+
+  .bg {
+    width: 268px;
+  }
 }
