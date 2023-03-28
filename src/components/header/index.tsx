@@ -16,7 +16,7 @@ const Header = () => {
           <a target='_blank' rel='noreferrer' href={`https://docs.langgenius.ai${i18n.language === 'zh' ? '/zh-hans' : ''}`}>{t('文档')}</a>
         </div>
         <div className={s.view}>
-          <div>{t('登录')}</div>
+          <Link href='https://cloud.langgenius.ai' target="_blank">{t('登录')}</Link>
           <Button>{t('获知更新')}</Button>
         </div>
       </div>
