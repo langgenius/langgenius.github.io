@@ -7,6 +7,7 @@ interface IProps {
   size?: "small" | "middle" | "large";
   type?: "default" | "white";
   disable?: boolean;
+  className?: string;
   [key: string]: any;
 }
 
@@ -16,11 +17,12 @@ const Button = ({
   type = "default",
   disable = false,
   onClick,
+  className,
   ...restProps
 }: IProps) => {
   return (
     <label
-      className={cn(s.btn, s[size], disable ? s.disable : s[type])}
+      className={cn(s.btn, s[size], disable ? s.disable : s[type], className)}
       onClick={onClick}
       {...restProps}
     >

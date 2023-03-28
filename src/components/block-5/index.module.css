@@ -10,6 +10,16 @@
   margin-bottom: 80px;
 }
 
+.btn {
+  margin-bottom: 34px;
+  width: 100%;
+}
+
+.icon {
+  background-size: initial;
+  margin-left: 8px;
+}
+
 .box {
   display: flex;
   gap: 24px;

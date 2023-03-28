@@ -3,6 +3,8 @@ import cn from "classnames";
 import Container from "../basic/container";
 import Card from "../basic/card";
 import s from "./index.module.css";
+import Button from "../basic/button";
+import Icon from "../basic/icon";
 
 const Block5 = () => {
   const { t } = useTranslation();
@@ -60,6 +62,12 @@ const Block5 = () => {
             >
               <div className={s.header}>{item.title}</div>
               <div className={s.subtitle}>{item.subTitle}</div>
+              {item.btn && (
+                <Button className={s.btn}>
+                  {t("构建一个自己的 AI 应用")}
+                  <Icon className={s.icon} type="arrow-white-left" />
+                </Button>
+              )}
               <div className={s.list}>
                 {item.list.map((listItem, index) => {
                   return (
