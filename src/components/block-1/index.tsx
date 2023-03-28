@@ -1,4 +1,4 @@
-import React from "react";
+import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import Container from "../basic/container";
 import Button from "../basic/button";
@@ -6,7 +6,6 @@ import Icon from "../basic/icon";
 import s from "./index.module.css";
 import blockBgEn from "../../assets/block-1-en.png";
 import blockBgZh from "../../assets/block-1-cn.png";
-import i18next from "i18next";
 
 const Block1 = () => {
   const { t } = useTranslation();

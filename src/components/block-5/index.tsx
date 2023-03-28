@@ -52,16 +52,23 @@ const Block5 = () => {
     <Container className={s.container}>
       <div className={s.title}>{t("AI 解放生产力，开发 AI 也别使蛮力")}</div>
       <div className={s.box}>
-        {data.map((item) => {
+        {data.map((item, id) => {
           return (
-            <Card className={cn(s.card, item.active ? "" : s.gray)}>
+            <Card
+              key={id * 4 + 3}
+              className={cn(s.card, item.active ? "" : s.gray)}
+            >
               <div className={s.header}>{item.title}</div>
               <div className={s.subtitle}>{item.subTitle}</div>
               <div className={s.list}>
                 {item.list.map((listItem, index) => {
                   return (
-                    <div className={cn(s.item)}>
-                      <div className={cn(s.rank, item.active ? s.rankactive : "")}>{index + 1}</div>
+                    <div key={id * index + 4} className={cn(s.item)}>
+                      <div
+                        className={cn(s.rank, item.active ? s.rankactive : "")}
+                      >
+                        {index + 1}
+                      </div>
                       <div className={s.text}>{listItem.title}</div>
                     </div>
                   );
@@ -70,12 +77,18 @@ const Block5 = () => {
               <div className={s.divider} />
               <div className={s.footertitle}>{item.footer.title}</div>
               <div className={s.people}>
-                {item.footer.list.map(people => {
-                  return(
-                    <div className={cn(s.peopleitem, item.active ? s.peopleactive : "")}>
+                {item.footer.list.map((people, key) => {
+                  return (
+                    <div
+                      key={key * 5 + 5}
+                      className={cn(
+                        s.peopleitem,
+                        item.active ? s.peopleactive : ""
+                      )}
+                    >
                       {people}
                     </div>
-                  )
+                  );
                 })}
               </div>
             </Card>

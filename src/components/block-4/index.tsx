@@ -34,9 +34,9 @@ const Block4 = () => {
     <Container className={s.container}>
       <div className={s.title}>{t("与广受欢迎的 LLMs 一同进步")}</div>
       <div className={s.box}>
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
-            <Card className={s.card}>
+            <Card key={index * 3 + 2} className={s.card}>
               <div className={s.header}>{item.title}</div>
               <div className={s.content}>{item.content}</div>
               <div className={cn(s.bg, s[item.img])}></div>
