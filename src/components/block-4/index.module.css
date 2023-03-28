@@ -62,8 +62,13 @@
   font-size: 16px;
   line-height: 20px;
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 6px;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
 }
 
 .block4-1 {
