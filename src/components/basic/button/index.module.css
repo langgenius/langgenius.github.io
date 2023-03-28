@@ -9,23 +9,23 @@
 }
 
 .default {
-  background-color: #1A56DB;
-  transition: background-color .4s;
+  background-color: #1a56db;
+  transition: background-color 0.4s;
 }
 
 .default:hover {
-  background-color: #1E429F;
+  background-color: #1e429f;
 }
 
 .white {
   background-color: #ffffff;
-  border: 1px solid #E5E7EB;
-  color: #1F2A37;
-  transition: background-color .4s;
+  border: 1px solid #e5e7eb;
+  color: #1f2a37;
+  transition: background-color 0.4s;
 }
 
 .white:hover {
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
 }
 
 .small {
@@ -46,3 +46,7 @@
   line-height: 24px;
 }
 
+.disable {
+  background: #A4CAFE;
+  cursor: default;
+}

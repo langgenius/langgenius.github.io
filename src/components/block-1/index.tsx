@@ -4,11 +4,13 @@ import Container from "../basic/container";
 import Button from "../basic/button";
 import Icon from "../basic/icon";
 import s from "./index.module.css";
-import blockBg from "../../assets/block-1.png";
+import blockBgEn from "../../assets/block-1-en.png";
+import blockBgZh from "../../assets/block-1-cn.png";
 import i18next from "i18next";
 
 const Block1 = () => {
   const { t } = useTranslation();
+  const local = i18next.language;
   return (
     <Container className={s.container}>
       <div className={s.top}>
@@ -51,14 +53,14 @@ const Block1 = () => {
             <Icon type="github" className={s.btnicon} />
             {githubText}
           </Button> */}
-          <Button size="large">
+          <Button size="large" disable>
             {t("体验云服务")}
             <div className={s.coming}>{t("即将上线")}</div>
           </Button>
         </div>
       </div>
       <div className={s.imgcontainer}>
-        <img alt="" src={blockBg} className={s.img} />
+        <img alt="" src={local === "zh" ? blockBgZh : blockBgEn} className={s.img} />
         <div className={s.imgsmall} />
       </div>
     </Container>
