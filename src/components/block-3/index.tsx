@@ -10,7 +10,6 @@ const Block3 = () => {
   const { t } = useTranslation();
   const local = i18next.language;
   const [activeImg, setActiveImg] = useState(`prompt${local}`);
-  console.log(local);
   const data = [
     {
       icon: "vector",
@@ -48,9 +47,9 @@ const Block3 = () => {
   return (
     <Container id="features" className={s.container}>
       <div className={s.left}>
-        {data.map((item, index) => {
+        {data.map((item) => {
           return (
-            <div key={index*2 + 1} className={s.card} onClick={() => setActiveImg(item.bg)}>
+            <div key={item.title} className={s.card} onClick={() => setActiveImg(item.bg)}>
               <div className={s.icon}>
                 <Icon className={s.iconinner} type={item.icon as any} />
               </div>

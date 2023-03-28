@@ -79,9 +79,9 @@ const Footer = () => {
         </div>
         <div className={s.nav}>
           <div className={s.list}>
-            {list1.map((l1, index) => {
+            {list1.map((l1) => {
               return (
-                <a className={s.item} key={index} {...(l1.props || {})}>
+                <a className={s.item} key={l1.text} {...(l1.props || {})}>
                   {l1.icon && <Icon type={l1?.icon as any} />}
                   {l1.text}
                 </a>
@@ -89,11 +89,11 @@ const Footer = () => {
             })}
           </div>
           <div className={s.list}>
-            {list2.map((l2, index) => {
+            {list2.map((l2) => {
               return (
                 <Link
                   className={s.item}
-                  key={index}
+                  key={l2.text}
                   to={l2.props?.href || ""}
                   {...(l2.props || {})}
                 >

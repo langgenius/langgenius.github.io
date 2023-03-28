@@ -40,9 +40,9 @@ const Block2 = () => {
         {t("AI 创意嘉年华，全都由 LangGenius 创建")}
       </div>
       <div className={s.box}>
-        {data.map((item, index) => {
+        {data.map((item) => {
           return(
-            <Card className={s.card} key={index}>
+            <Card className={s.card} key={item.title}>
               <div className={s.icon}>
                 <Icon className={s.iconcontent} type={item.icon as any} />
               </div>

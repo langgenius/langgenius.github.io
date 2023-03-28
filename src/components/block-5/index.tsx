@@ -26,7 +26,6 @@ const Block5 = () => {
         list: [
           "Product Designer",
           "UI designer",
-          "UI designer",
           "back-end engineer",
           "Data Analyst (😭Unable to Work)",
         ],
@@ -54,10 +53,10 @@ const Block5 = () => {
     <Container className={s.container}>
       <div className={s.title}>{t("AI 解放生产力，开发 AI 也别使蛮力")}</div>
       <div className={s.box}>
-        {data.map((item, id) => {
+        {data.map((item) => {
           return (
             <Card
-              key={id * 4 + 3}
+              key={item.title}
               className={cn(s.card, item.active ? "" : s.gray)}
             >
               <div className={s.header}>{item.title}</div>
@@ -71,7 +70,7 @@ const Block5 = () => {
               <div className={s.list}>
                 {item.list.map((listItem, index) => {
                   return (
-                    <div key={id * index + 4} className={cn(s.item)}>
+                    <div key={listItem.title} className={cn(s.item)}>
                       <div
                         className={cn(s.rank, item.active ? s.rankactive : "")}
                       >
@@ -88,7 +87,7 @@ const Block5 = () => {
                 {item.footer.list.map((people, key) => {
                   return (
                     <div
-                      key={key * 5 + 5}
+                      key={people}
                       className={cn(
                         s.peopleitem,
                         item.active ? s.peopleactive : ""
