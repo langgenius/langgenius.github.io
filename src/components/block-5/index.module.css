@@ -60,6 +60,7 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  flex-shrink: 0;
 }
 
 .rankactive {
