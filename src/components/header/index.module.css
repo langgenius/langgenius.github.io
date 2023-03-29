@@ -19,6 +19,7 @@
 }
 
 .logo {
+  display: block;
   width: 116px;
   height: 36px;
   margin-right: 32px;

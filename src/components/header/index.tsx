@@ -10,7 +10,8 @@ const Header = () => {
     <nav className={s.header}>
       <div className={s.center}>
         <div className={s.ctrl}>
-          <div className={s.logo}></div>
+          <a href="/" className={s.logo}>
+          </a>
           <Link href='#examples'>{t('案例')}</Link>
           <Link href='#features'>{t('特性')}</Link>
           <a target='_blank' rel='noreferrer' href={`https://docs.langgenius.ai${i18n.language === 'zh' ? '/zh-hans' : ''}`}>{t('文档')}</a>
