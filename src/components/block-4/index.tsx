@@ -1,3 +1,4 @@
+import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import cn from "classnames";
 import Container from "../basic/container";
@@ -7,6 +8,7 @@ import s from "./index.module.css";
 
 const Block4 = () => {
   const { t } = useTranslation();
+  const local = i18next.language;
   const data = [
     {
       img: "block4-1",
@@ -26,9 +28,14 @@ const Block4 = () => {
   ];
   const lastMode = {
     title: t("更多模型支持中"),
-    content:
-      t("除了 OpenAI 的 GPT 系列，LangGenius 将陆续支持更多大型语言模型。请向我们反馈，或在开源社区参与开发。"),
-    btn: t("更多模型支持中")
+    content: t(
+      "除了 OpenAI 的 GPT 系列，LangGenius 将陆续支持更多大型语言模型。请向我们反馈，或在开源社区参与开发。"
+    ),
+    btn: t("更多模型支持中"),
+    link:
+      local === "en"
+        ? "https://docs.langgenius.ai/en/advanced/model-configuration"
+        : "https://docs.langgenius.ai/zh-hans/advanced/model-configuration",
   };
   return (
     <Container className={s.container}>
@@ -47,7 +54,10 @@ const Block4 = () => {
           <Icon className={s.icon} type="dot" />
           <div className={s.header}>{lastMode.title}</div>
           <div className={s.content}>{lastMode.content}</div>
-          <div className={s.btn}>
+          <div
+            className={s.btn}
+            onClick={() => window.open(lastMode.link, '_blank')}
+          >
             {lastMode.btn}
             <Icon className={s.arrow} type="arrow-blue-w-left" />
           </div>
