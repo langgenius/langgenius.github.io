@@ -98,6 +98,7 @@ const Footer = () => {
                   {...(l2.props || {})}
                 >
                   {l2.text}
+                  {l2.text === "Status OK" && <div className={s.ok} />}
                 </Link>
               );
             })}
@@ -128,7 +129,7 @@ const Footer = () => {
                   <div onClick={() => i18n.changeLanguage("en")}>English</div>
                 </Menu.Item>
                 <Menu.Item key={"简体中文"} as={Fragment}>
-                <div onClick={() => i18n.changeLanguage("zh")}>简体中文</div>
+                  <div onClick={() => i18n.changeLanguage("zh")}>简体中文</div>
                 </Menu.Item>
               </Menu.Items>
             </Transition>

@@ -60,6 +60,18 @@
   cursor: pointer;
 }
 
+.item:hover {
+  color: #1C64F2;
+}
+
+.ok {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #31C48D;
+  margin-left: 7px;
+}
+
 .bottom {
   box-sizing: border-box;
   display: flex;
