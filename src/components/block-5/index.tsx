@@ -25,8 +25,8 @@ const Block5 = () => {
         title: t("组上一帮子人"),
         list: [
           "Product Designer",
-          "UI designer",
-          "back-end engineer",
+          "UI Designer",
+          "Back-end Engineer",
           "Data Analyst (😭Unable to Work)",
         ],
       },
