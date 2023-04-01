@@ -7,7 +7,7 @@ const Creators = () => {
       <div className={s.content}>
         <div className={s.sectionOne}>
           <div className={s.sectionContent}>
-            <h2 className={s.h2}>Build the future of development</h2>
+            <h2 className={s.h2}>Build the future of AI development</h2>
             <div className={s.text}>Unlock the full potential of language models with LangGenius, make it intuitive and quick for both professional and non-developers to design, build, and deploy operational AI applications. We are striving to be the best open source LLMOps platform.</div>
           </div>
         </div>
@@ -57,15 +57,15 @@ const Creators = () => {
                 <div className={s.role}>Backend</div>
               </div>
               <div className={cn(s.profile, s.jinxia)}>
-                <div className={s.name}>Jinxia S</div>
+                <div className={s.name}>Jinxia S.</div>
                 <div className={s.role}>Frontend</div>
               </div>
               <div className={cn(s.profile, s.xiLiu)}>
                 <div className={s.name}>Xi Liu</div>
                 <div className={s.role}>Frontend</div>
               </div>
-              <div className={cn(s.profile, s.xiaohang)}>
-                <div className={s.name}>Xiaohang Z.</div>
+              <div className={cn(s.profile, s.zehong)}>
+                <div className={s.name}>Zehong J.</div>
                 <div className={s.role}>Frontend</div>
               </div>
               <div className={cn(s.profile, s.gillian)}>
@@ -76,8 +76,8 @@ const Creators = () => {
                 <div className={s.name}>Chocobo</div>
                 <div className={s.role}>SRE</div>
               </div>
-              <div className={cn(s.profile, s.zehong)}>
-                <div className={s.name}>Zehong J.</div>
+              <div className={cn(s.profile, s.xiaohang)}>
+                <div className={s.name}>Xiaohang Z.</div>
                 <div className={s.role}>Frontend</div>
               </div>
               <div className={cn(s.profile, s.pengfei)}>
@@ -139,7 +139,7 @@ const Creators = () => {
               <div className={s.contactCard}>
                 <div className={cn(s.cardIcon, s.iconChat)}/>
                 <div className={s.contactWay}>Community</div>
-                <div className={s.contactText}>For product usage support or communication, please join our Discord or you can participate in building LangGenius by submitting issues on GitHub.</div>
+                <div className={s.contactText}>Please communicate with us through Discord or participate in building LangGenius by submitting GitHub issues.</div>
                 <div className={s.extraLinks}>
                   <div className={s.linkItem}>
                     <div className={s.logoGithub}/>
