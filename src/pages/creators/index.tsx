@@ -68,13 +68,13 @@ const Creators = () => {
                 <div className={s.name}>Xiaohang Z.</div>
                 <div className={s.role}>Frontend</div>
               </div>
-              <div className={cn(s.profile, s.chocobo)}>
+              <div className={cn(s.profile, s.gillian)}>
                 <div className={s.name}>Gillian Z.</div>
-                <div className={s.role}>SRE</div>
-              </div>
-              <div className={cn(s.profile, s.minco)}>
-                <div className={s.name}>Chocobo</div>
                 <div className={s.role}>Frontend</div>
+              </div>
+              <div className={cn(s.profile, s.chocobo)}>
+                <div className={s.name}>Chocobo</div>
+                <div className={s.role}>SRE</div>
               </div>
               <div className={cn(s.profile, s.zehong)}>
                 <div className={s.name}>Zehong J.</div>
@@ -90,7 +90,7 @@ const Creators = () => {
               </div> */}
             </div>
             <div className={s.line}></div>
-            <div className={s.thanks}>The growth of LangGenius wouldn't be possible without the support of open-source communities like Github, especially our contributors. A special shoutout to <a className={s.link} target="_blank" rel="noreferrer" href="https://www.apidog.com">Apidog</a> for their invaluable help.</div>
+            <div className={s.thanks}>The growth of LangGenius wouldn't be possible without the support of open-source communities like GitHub, especially our contributors. A special shoutout to <a className={s.link} target="_blank" rel="noreferrer" href="https://www.apidog.com">Apidog</a> for their invaluable help.</div>
           </div>
         </div>
         <div className={s.sectionThree}>
@@ -143,7 +143,7 @@ const Creators = () => {
                 <div className={s.extraLinks}>
                   <div className={s.linkItem}>
                     <div className={s.logoGithub}/>
-                    <a className={s.extraLink} target="_blank" rel="noreferrer" href="https://github.com/langgenius">Github</a>
+                    <a className={s.extraLink} target="_blank" rel="noreferrer" href="https://github.com/langgenius">GitHub</a>
                   </div>
                   <div className={s.linkItem}>
                     <div className={s.logoDiscord}/>
