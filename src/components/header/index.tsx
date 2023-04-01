@@ -14,7 +14,7 @@ const Header = () => {
           </a>
           <Link href='#examples'>{t('案例')}</Link>
           <Link href='#features'>{t('特性')}</Link>
-          <a target='_blank' rel='noreferrer' href={`https://docs.langgenius.ai${i18n.language === 'zh' ? '/zh-hans' : ''}`}>{t('文档')}</a>
+          <Link target='_blank' rel='noreferrer' href={`https://docs.langgenius.ai${i18n.language === 'zh' ? '/zh-hans' : ''}`}>{t('文档')}</Link>
         </div>
         <div className={s.view}>
           <Link href='https://cloud.langgenius.ai' target="_blank">{t('登录')}</Link>
