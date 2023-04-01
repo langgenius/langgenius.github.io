@@ -1,0 +1,499 @@
+.content {
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 680px;
+  background: no-repeat;
+  background-size: cover;
+  background-image: url(../../assets/bg.svg);
+}
+.sectionContent {
+  max-width: 1280px;
+}
+
+.h2 {
+  margin-top: 255px;
+  margin-bottom: 16px;
+  text-align: start;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 92px;
+}
+
+.text {
+  text-align: start;
+  color: #6B7280;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.sectionTwo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px 0;
+}
+.sectionTwoContent {
+  max-width: 1280px;
+  z-index: 1;
+}
+.teamIntro {
+  padding: 0 48px;
+}
+.tag {
+  color: #1C64F2;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+.title {
+  margin: 8px 0 16px;
+  color: #111928;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 60px;
+}
+.introText {
+  text-align: start;
+  color: #6B7280;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.teamMembers {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 56px 40px 0;
+}
+.profile {
+  width: 200px;
+  height: 208px;
+  padding-top: 120px;
+  background: 50px 20px no-repeat;
+  background-size: 100px;
+}
+.name {
+  margin-top: 20px;
+  color: #111928;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+.role {
+  color: #6B7280;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.luyu {
+  background-image: url(../../assets/avatars/luyu.png);
+}
+.takatost {
+  background-image: url(../../assets/avatars/Takatost.png);
+}
+.evan {
+  background-image: url(../../assets/avatars/Evan.png);
+}
+.joel {
+  background-image: url(../../assets/avatars/Joel.png);
+}
+.niteKnite {
+  background-image: url(../../assets/avatars/NiteKnite.png);
+}
+.panpan {
+  background-image: url(../../assets/avatars/Panpan.png);
+}
+.minco {
+  background-image: url(../../assets/avatars/Minco.png);
+}
+.banana {
+  background-image: url(../../assets/avatars/Banana.png);
+}
+.moneyZhu {
+  background-image: url(../../assets/avatars/MoneyZhu.png);
+}
+.jinxia {
+  background-image: url(../../assets/avatars/Jingxia.png);
+}
+.xiLiu {
+  background-image: url(../../assets/avatars/XiLiu.png);
+}
+.xiaohang {
+  background-image: url(../../assets/avatars/Xiaohang.png);
+}
+.gillian {
+  background-image: url(../../assets/avatars/Gillian.png);
+}
+.chocobo {
+  background-image: url(../../assets/avatars/Chocobo.png);
+}
+.zehong {
+  background-image: url(../../assets/avatars/Zehong.png);
+}
+.pengfei {
+  background-image: url(../../assets/avatars/Pengfei.png);
+}
+.jyong {
+  background-image: url(../../assets/avatars/Jyong.png);
+}
+
+.line {
+  margin: 64px 0 ;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(229, 231, 235, 0) 0%, #E5E7EB 50.29%, rgba(229, 231, 235, 0) 100%);
+  border-radius: 2px;
+}
+.thanks {
+  margin: 0 auto;
+  max-width: 842px;
+  color: #111928;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
+.link {
+  color: #1C64F2;
+  cursor: pointer;
+}
+.sectionThree {
+  position: relative;
+  width: 100%;
+}
+.sectionThreeContent .title {
+  position: relative;
+  margin: 0;
+  padding-top: 24px;
+}
+.sectionThreeContent .title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: center no-repeat url(../../assets/icons/book-open-01.svg);
+}
+.quote {
+  position: relative;
+  margin: 56px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 72px 32px;
+  width: 1080px;
+  background: linear-gradient(272.68deg, #FAFBFC 0%, #F5F7FA 100%);
+  box-shadow: -1px -1px 0px #FFFFFF, 1px 1px 3px rgba(102, 111, 128, 0.08), 8px 8px 12px rgba(102, 111, 128, 0.1), -8px -8px 12px rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+}
+.quote::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 36px;
+  display: block;
+  width: 50px;
+  height: 42px;
+  background: center no-repeat url(../../assets/icons/quote.svg);
+}
+.quoteText {
+  color: #111928;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  z-index: 1;
+}
+.signature {
+  margin-top: 16px;
+  align-self: self-end;
+}
+.signatureName {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  color: #111928;
+}
+.signatureRole {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  color: #6B7280;
+}
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.timelineItem {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+}
+.time {
+  position: relative;
+  flex-shrink: 0;
+  width: 230px;
+  text-align: start;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #111928;
+}
+.time::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 57px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #3F83F8;
+  border: 2px solid #FFFFFF;
+  border-radius: 12px;
+}
+.time.latest::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: 44px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF center no-repeat url(../../assets/icons/rocket-01.svg);
+  background-size: 24px;
+  border: 0.5px solid #E1EFFE;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+.achivement {
+  text-align: start;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1F2A37;
+}
+.timelineDecoration {
+  position: absolute;
+  width: 4px;
+  height: 566px;
+  left: 189px;
+  top: 40px;
+  background: linear-gradient(180deg, #C3DDFD 65.4%, rgba(195, 221, 253, 0) 100%);
+}
+.aboutBgOne {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/about-bg.svg);
+  background-position: bottom -621px left;
+}
+.aboutBgTwo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/about-bg.svg);
+  background-position: top -621px left;
+}
+
+.sectionFour {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  background: #F9FAFB;
+}
+.sectionFourContent {
+  margin: 96px auto 120px;
+  max-width: 1094px;
+}
+.bgPic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/footer-bg.svg);
+  background-position: bottom -388px right;
+  padding: 0 120px;
+}
+.contact {
+  margin-bottom: 64px;
+  text-align: start;
+}
+.mb8 {
+  margin-bottom: 8px;
+}
+.contactCards {
+  display: flex;
+  justify-content: space-between;
+}
+.contactCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  width: 535px;
+  height: 342px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+}
+.cardIcon {
+  width: 64px;
+  height: 64px;
+  border: 0.5px solid #E5E7EB;
+  border-radius: 16px;
+  background: center no-repeat;
+  background-size: 32px;
+}
+.iconChat {
+  background-image: url(../../assets/icons/message-chat-square.svg);
+}
+.iconMail {
+  background-image: url(../../assets/icons/mail-02.svg);
+}
+.contactWay {
+  margin: 8px 0;
+  color: #111928;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.contactText {
+  flex: 1 1 auto;
+  text-align: start;
+  color: #6B7280;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.extraLinks {
+  display: flex;
+}
+.linkItem {
+  position: relative;
+  margin-right: 16px;
+  padding: 10px 40px 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #374151;
+  background-color: #fff;
+}
+.linkItem:hover {
+  background: #EBF5FF;
+  border: 1px solid #1A56DB;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.linkItem::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: center no-repeat url(../../assets/icons/arrow-up-right.svg);
+}
+.logoGithub {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  background: center no-repeat url(../../assets/icons/github.svg);
+}
+.logoDiscord {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  background: center no-repeat url(../../assets/icons/discord.svg);
+}
+.extraLinkActive {
+  color: #1C64F2;
+}
+
+.contactCard:hover {
+  background: linear-gradient(112.7deg, #1C64F2 1.92%, rgba(28, 100, 242, 0.96) 97.73%), #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contactCard:hover .cardIcon {
+  border: 1px solid #1A56DB;
+}
+.contactCard:hover .iconChat {
+  background-image: url(../../assets/icons/message-chat-w.svg);
+}
+.contactCard:hover .iconMail {
+  background-image: url(../../assets/icons/mail-w.svg);
+}
+.contactCard:hover .contactWay {
+  color: #fff;
+}
+.contactCard:hover .contactText {
+  color: #C3DDFD;
+}

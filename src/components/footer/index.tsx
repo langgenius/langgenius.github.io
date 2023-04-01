@@ -34,11 +34,11 @@ const list1 = [
 const list2 = [
   {
     text: "Creators",
-    // props: {
-    //   to: "/about",
-    //   target: "_blank",
-    //   rel: "noreferrer",
-    // },
+    props: {
+      to: "/about",
+      target: "_blank",
+      rel: "noreferrer",
+    },
   },
   {
     text: "Terms of Service",
