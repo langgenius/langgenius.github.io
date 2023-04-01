@@ -157,7 +157,7 @@ const Creators = () => {
                 <div className={s.contactText}>Email us for general queries, including marketing and partnership opportunities.</div>
                 <div className={s.extraLinks}>
                   <div className={s.linkItem}>
-                    <a href="mailto:contact@langgenius.ai" className={s.extraLinkActive}>contact@langgenius.ai</a>
+                    <a href="mailto:hello@langgenius.ai" className={s.extraLinkActive}>hello@langgenius.ai</a>
                   </div>
                 </div>
               </div>
