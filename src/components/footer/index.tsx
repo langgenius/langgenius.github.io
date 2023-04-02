@@ -1,73 +1,82 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import i18next from "i18next";
-import cn from "classnames";
-import i18n from "../../local";
-import Icon from "../basic/icon";
-import s from "./index.module.css";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+import cn from 'classnames';
+import i18n from '../../local';
+import Icon from '../basic/icon';
+import s from './index.module.css';
 
 const Footer = () => {
   const [t] = useTranslation();
   const list1 = [
     {
-      text: t("Product Roadmap"),
+      text: t('Product Roadmap'),
       props: {
         href: `https://docs.langgenius.ai${
-          i18next.language === "zh" ? "/zh-hans" : ""
+          i18next.language === 'zh' ? '/zh-hans' : ''
         }/community/product-roadmap`,
-        target: "_blank",
-        rel: "noreferrer",
+        target: '_blank',
+        rel: 'noreferrer',
       },
     },
-    { text: t("API Reference")},
     {
-      icon: "github",
-      text: t("GitHub"),
+      text: t('API Reference'),
       props: {
-        href: "https://github.com/langgenius",
-        target: "_blank",
-        rel: "noreferrer",
+        href: `https://docs.langgenius.ai${
+          i18next.language === 'zh' ? '/zh-hans' : ''
+        }/application/backend-as-a-service`,
+        target: '_blank',
+        rel: 'noreferrer',
       },
     },
-    { icon: "discord", text: "Discord" },
+    {
+      icon: 'github',
+      text: t('GitHub'),
+      props: {
+        href: 'https://github.com/langgenius',
+        target: '_blank',
+        rel: 'noreferrer',
+      },
+    },
+    { icon: 'discord', text: 'Discord' },
   ];
 
   const list2 = [
     {
-      text: t("Creators"),
+      text: t('Creators'),
       props: {
-        to: "/about",
-        target: "_blank",
-        rel: "noreferrer",
+        to: '/about',
+        target: '_blank',
+        rel: 'noreferrer',
       },
     },
     {
-      text: t("Terms of Service"),
+      text: t('Terms of Service'),
       props: {
-        to: "/terms-of-service",
-        target: "_blank",
-        rel: "noreferrer",
+        to: '/terms-of-service',
+        target: '_blank',
+        rel: 'noreferrer',
       },
     },
     {
-      text: t("Privacy Policy"),
+      text: t('Privacy Policy'),
       props: {
-        href: "/privacy-policy",
-        target: "_blank",
-        rel: "noreferrer",
+        href: '/privacy-policy',
+        target: '_blank',
+        rel: 'noreferrer',
       },
     },
     {
-      text: t("Status OK"),
+      text: t('Status OK'),
       props: {
-        href: "http://langgenius.statuspage.io",
-        target: "_blank",
-        rel: "noreferrer",
+        href: 'http://langgenius.statuspage.io',
+        target: '_blank',
+        rel: 'noreferrer',
       },
     },
   ];
-  const [title, setTitle] = useState(t("语言"));
+  const [title, setTitle] = useState(t('语言'));
   const [displayMenu, setDisplayMenu] = useState(false);
   const showDropdownMenu = () => setDisplayMenu(true);
   const hideDropdownMenu = (v: string, t: string) => {
@@ -82,7 +91,7 @@ const Footer = () => {
           <div className={s.logo} />
           <div className={s.text}>
             {t(
-              "LangGenius is progressing to become the best open source LLMOps platform."
+              'LangGenius is progressing to become the best open source LLMOps platform.'
             )}
           </div>
         </div>
@@ -103,11 +112,11 @@ const Footer = () => {
                 <Link
                   className={s.item}
                   key={l2.text}
-                  to={l2.props?.href || ""}
+                  to={l2.props?.href || ''}
                   {...(l2.props || {})}
                 >
                   {l2.text}
-                  {l2.text === "Status OK" && <div className={s.ok} />}
+                  {l2.text === 'Status OK' && <div className={s.ok} />}
                 </Link>
               );
             })}
@@ -123,7 +132,7 @@ const Footer = () => {
             )}
             <div className={s.dropdown}>
               <div
-                className={cn([s.button, displayMenu ? s.active : ""])}
+                className={cn([s.button, displayMenu ? s.active : ''])}
                 onClick={() => showDropdownMenu()}
               >
                 <Icon type="language" className={s.icon} />
@@ -132,14 +141,14 @@ const Footer = () => {
               </div>
               {displayMenu && (
                 <div className={s.menu}>
-                  <div onClick={() => hideDropdownMenu("en", t("English"))}>
+                  <div onClick={() => hideDropdownMenu('en', t('English'))}>
                     English
                   </div>
-                  <div onClick={() => hideDropdownMenu("zh", t("简体中文"))}>
-                    {t("简体中文")}
+                  <div onClick={() => hideDropdownMenu('zh', t('简体中文'))}>
+                    {t('简体中文')}
                   </div>
-                  <div onClick={() => hideDropdownMenu("ja", t("日本語"))}>
-                    {t("日本語")}
+                  <div onClick={() => hideDropdownMenu('ja', t('日本語'))}>
+                    {t('日本語')}
                   </div>
                 </div>
               )}
