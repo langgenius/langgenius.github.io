@@ -117,7 +117,7 @@ const Footer = () => {
         <div className={s.copywrite}>© 2023 LangGenius, Inc. </div>
         <div className={s.language}>
           <>
-            <div className={s.shade} onClick={() => setDisplayMenu(false)} />
+            {displayMenu && <div className={s.shade} onClick={() => setDisplayMenu(false)} />}
             <div className={s.dropdown}>
               <div className={cn([s.button, displayMenu ? s.active : ""])} onClick={() => showDropdownMenu()}>
                 <Icon type="language" className={s.icon} />
