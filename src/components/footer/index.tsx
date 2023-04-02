@@ -1,67 +1,66 @@
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
-import { Menu, Transition } from "@headlessui/react";
-import { useTranslation } from "react-i18next";
-import i18next from "i18next";
-import i18n from "../../local";
-import Icon from "../basic/icon";
-import s from "./index.module.css";
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import { Menu, Transition } from '@headlessui/react';
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+import i18n from '../../local';
+import Icon from '../basic/icon';
+import s from './index.module.css';
 
 const list1 = [
   {
-    text: "Product Roadmap",
+    text: 'Product Roadmap',
     props: {
       href: `https://docs.langgenius.ai${
-        i18next.language === "zh" ? "/zh-hans" : ""
+        i18next.language === 'zh' ? '/zh-hans' : ''
       }/community/product-roadmap`,
-      target: "_blank",
-      rel: "noreferrer",
+      target: '_blank',
+      rel: 'noreferrer',
     },
   },
-  { text: "API Reference" },
+  { text: 'API Reference' },
   {
-    icon: "github",
-    text: "GitHub",
+    icon: 'github',
+    text: 'GitHub',
     props: {
-      href: "https://github.com/langgenius",
-      target: "_blank",
-      rel: "noreferrer",
+      href: 'https://github.com/langgenius',
+      target: '_blank',
+      rel: 'noreferrer',
     },
   },
-  { icon: "discord", text: "Discord" },
+  { icon: 'discord', text: 'Discord' },
 ];
 
 const list2 = [
   {
-    text: "Creators",
+    text: 'Creators',
     props: {
-      to: "/about",
-      target: "_blank",
-      rel: "noreferrer",
+      to: '/about',
+      rel: 'noreferrer',
     },
   },
   {
-    text: "Terms of Service",
+    text: 'Terms of Service',
     props: {
-      to: "/terms-of-service",
-      target: "_blank",
-      rel: "noreferrer",
+      to: '/terms-of-service',
+      target: '_blank',
+      rel: 'noreferrer',
     },
   },
   {
-    text: "Privacy Policy",
+    text: 'Privacy Policy',
     props: {
-      href: "/privacy-policy",
-      target: "_blank",
-      rel: "noreferrer",
+      href: '/privacy-policy',
+      target: '_blank',
+      rel: 'noreferrer',
     },
   },
   {
-    text: "Status OK",
+    text: 'Status OK',
     props: {
-      href: "http://langgenius.statuspage.io",
-      target: "_blank",
-      rel: "noreferrer",
+      href: 'http://langgenius.statuspage.io',
+      target: '_blank',
+      rel: 'noreferrer',
     },
   },
 ];
@@ -94,11 +93,11 @@ const Footer = () => {
                 <Link
                   className={s.item}
                   key={l2.text}
-                  to={l2.props?.href || ""}
+                  to={l2.props?.href || ''}
                   {...(l2.props || {})}
                 >
                   {l2.text}
-                  {l2.text === "Status OK" && <div className={s.ok} />}
+                  {l2.text === 'Status OK' && <div className={s.ok} />}
                 </Link>
               );
             })}
@@ -111,7 +110,7 @@ const Footer = () => {
           <Menu as="div" className="relative inline-block text-left">
             <div>
               <Menu.Button className="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                {t("语言")}
+                {t('语言')}
                 <Icon type="language" />
               </Menu.Button>
             </div>
@@ -125,11 +124,11 @@ const Footer = () => {
               leaveTo="transform opacity-0 scale-95"
             >
               <Menu.Items>
-                <Menu.Item key={"English"} as={Fragment}>
-                  <div onClick={() => i18n.changeLanguage("en")}>English</div>
+                <Menu.Item key={'English'} as={Fragment}>
+                  <div onClick={() => i18n.changeLanguage('en')}>English</div>
                 </Menu.Item>
-                <Menu.Item key={"简体中文"} as={Fragment}>
-                  <div onClick={() => i18n.changeLanguage("zh")}>简体中文</div>
+                <Menu.Item key={'简体中文'} as={Fragment}>
+                  <div onClick={() => i18n.changeLanguage('zh')}>简体中文</div>
                 </Menu.Item>
               </Menu.Items>
             </Transition>

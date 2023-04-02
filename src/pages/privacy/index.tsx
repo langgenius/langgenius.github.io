@@ -187,7 +187,7 @@ const Privacy = () => {
         <h2 className={s.h2}>How to contact us?</h2>
         <p className={cn(s.text, s['text-margin'])}>Your information is controlled by LangGenius. If you have questions or concerns about how your information is handled, please direct your inquiry to LangGenius, which is responsible for facilitating such inquiries.</p>
         <p className={cn(s.text, s['text-margin'])}>LangGenius, Inc., a Delaware registered company (File No. 7358523), USA.</p>
-        <p className={s.text}>Email: <a style={{ position: 'relative', zIndex: 2}} href="mailto:contact@langgenius.ai" className={s.link}>contact@langgenius.ai</a></p>
+        <p className={s.text}>Email: <a style={{ position: 'relative', zIndex: 2}} href="mailto:hello@langgenius.ai" className={s.link}>hello@langgenius.ai</a></p>
       </section>
     </div>
   );
