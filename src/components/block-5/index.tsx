@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 import cn from "classnames";
 import Container from "../basic/container";
 import Card from "../basic/card";
@@ -48,6 +49,11 @@ const Block5 = () => {
       },
     },
   ];
+  const local = i18next.language;
+  const path =
+    local === "zh"
+      ? "https://docs.langgenius.ai/zh-hans/application/creating-an-application"
+      : "https://docs.langgenius.ai/en/application/creating-an-application";
 
   return (
     <Container className={s.container}>
@@ -62,7 +68,10 @@ const Block5 = () => {
               <div className={s.header}>{item.title}</div>
               <div className={s.subtitle}>{item.subTitle}</div>
               {item.btn && (
-                <Button className={s.btn}>
+                <Button
+                  className={s.btn}
+                  onClick={() => window.open(path, "_blank")}
+                >
                   {t("构建一个自己的 AI 应用")}
                   <Icon className={s.icon} type="arrow-white-left" />
                 </Button>
