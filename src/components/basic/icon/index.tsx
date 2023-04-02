@@ -19,7 +19,9 @@ interface IProps {
     | "dot"
     | "arrow-blue-w-left"
     | "discord"
-    | "language";
+    | "language"
+    | "tranggle-down";
+
   className?: string;
 }
 const Icon = ({ type, className }: IProps) => {

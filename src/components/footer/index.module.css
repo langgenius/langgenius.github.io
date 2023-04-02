@@ -99,3 +99,66 @@
   display: flex;
   gap: 8px;
 }
+
+.dropdown{
+  border-radius: 4px;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.shade {
+  position: fixed;
+  inset: 0;
+}
+
+.menu{
+  position: absolute;
+  bottom: 35px;
+  min-width: 101px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 0.5px solid #E5E7EB;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.button{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 4px 8px;
+  line-height: 21px;
+}
+
+.button:hover {
+  background-color: #F3F4F6;
+}
+
+.active {
+  background-color: #F3F4F6;
+}
+
+.title {
+  margin: 0 2px 0 6px;
+}
+
+.menu > div{
+  padding: 6px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 8px;
+}
+
+.menu > div:hover{
+  background: #F3F4F6;
+}
