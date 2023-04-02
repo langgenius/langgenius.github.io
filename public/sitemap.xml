@@ -1,7 +1,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://langgenius.ai/</loc>
-  <lastmod>2023-03-26T04:00:54+00:00</lastmod>
+  <lastmod>2023-04-01T04:00:54+00:00</lastmod>
+</url>
+<url>
+  <loc>https://langgenius.ai/about</loc>
+  <lastmod>2023-04-01T04:00:54+00:00</lastmod>
 </url>
 <url>
   <loc>https://langgenius.ai/privacy-policy</loc>
@@ -17,10 +21,10 @@
 </url>
 <url>
   <loc>https://docs.langgenius.ai/en/</loc>
-  <lastmod>2023-03-26T04:00:54+00:00</lastmod>
+  <lastmod>2023-04-01T04:00:54+00:00</lastmod>
 </url>
 <url>
   <loc>https://docs.langgenius.ai/zh-hans/</loc>
-  <lastmod>2023-03-26T04:00:54+00:00</lastmod>
+  <lastmod>2023-04-01T04:00:54+00:00</lastmod>
 </url>
 </urlset>
