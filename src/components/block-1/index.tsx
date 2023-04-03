@@ -18,9 +18,7 @@ const Block1 = () => {
             <Icon type="horn" className={s.r} />
             {t('内测进行中')}
           </Button>
-          <div className={s.text}>
-            {t('v0.2 云端版内测后，LangGenius 将在 GitHub 开源')}
-          </div>
+          <div className={s.text}>{t('Inside announcement text')}</div>
           {/* <a
             className={s.link}
             target="_blank"
