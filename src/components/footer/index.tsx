@@ -11,11 +11,11 @@ const Footer = () => {
   const [t] = useTranslation();
   const list1 = [
     {
-      text: t('Product Roadmap'),
+      text: t('Support'),
       props: {
         href: `https://docs.langgenius.ai${
           i18next.language === 'zh' ? '/zh-hans' : ''
-        }/community/product-roadmap`,
+        }/community/support`,
         target: '_blank',
         rel: 'noreferrer',
       },
