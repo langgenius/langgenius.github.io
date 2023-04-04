@@ -1,0 +1,75 @@
+.dialog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.modal {
+  flex: 0 0 auto;
+  padding: 30px;
+  width: 500px;
+  min-height: 100px;
+  background: #fff;
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  border-radius: 12px;
+}
+
+.header {
+  margin-bottom: 4px;
+  line-height: 1.5em;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tip {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.form {
+  margin-top: 26px;
+}
+
+.label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.fieldName {
+  height: 36px;
+  line-height: 36px;
+}
+
+.inputSet {
+  flex: 1 0 auto;
+}
+
+.input {
+  width: 100%;
+  padding: 0 8px;
+  height: 36px;
+  font-size: 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.error {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #d92d20;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
