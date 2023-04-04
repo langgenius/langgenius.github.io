@@ -24,6 +24,13 @@ eslint.log
 /.pnp
 .pnp.js
 
+# package managers
+pnpm-lock.yaml
+
+# next
+.next
+out
+
 # testing
 /coverage
 
