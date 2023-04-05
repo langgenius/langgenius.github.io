@@ -21,13 +21,13 @@ const Button = ({
   ...restProps
 }: IProps) => {
   return (
-    <label
+    <button
       className={cn(s.btn, s[size], disable ? s.disable : s[type], className)}
       onClick={onClick}
       {...restProps}
     >
       {children}
-    </label>
+    </button>
   );
 };
 
