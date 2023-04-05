@@ -69,6 +69,7 @@ const Footer = () => {
     },
     {
       text: t('Status OK'),
+      key: "Status OK",
       props: {
         href: 'http://langgenius.statuspage.io',
         target: '_blank',
@@ -116,7 +117,7 @@ const Footer = () => {
                   {...(l2.props || {})}
                 >
                   {l2.text}
-                  {l2.text === 'Status OK' && <div className={s.ok} />}
+                  {l2?.key === 'Status OK' && <div className={s.ok} />}
                 </Link>
               );
             })}
