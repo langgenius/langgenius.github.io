@@ -31,7 +31,7 @@ const Block4 = () => {
     content: t(
       "除了 OpenAI 的 GPT 系列，LangGenius 将陆续支持更多大型语言模型。请向我们反馈，或在开源社区参与开发。"
     ),
-    btn: t("更多模型支持中"),
+    btn: t("告诉我们你想要什么"),
     link:
       local === "en"
         ? "https://docs.langgenius.ai/en/advanced/model-configuration"

@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 import cn from "classnames";
 import Container from "../basic/container";
 import Card from "../basic/card";
@@ -49,12 +48,7 @@ const Block5 = () => {
       },
     },
   ];
-  const local = i18next.language;
-  const path =
-    local === "zh"
-      ? "https://docs.langgenius.ai/zh-hans/application/creating-an-application"
-      : "https://docs.langgenius.ai/en/application/creating-an-application";
-
+  const path = "https://cloud.langgenius.ai/"
   return (
     <Container className={s.container}>
       <div className={s.title}>{t("AI 解放生产力，开发 AI 也别使蛮力")}</div>
