@@ -105,13 +105,20 @@
   box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
     0px 10px 10px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
-  background-image: url(../../assets/block-1-sub-img.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 416px;
   width: 410px;
   right: 0;
   bottom: -60px;
+}
+
+.zh {
+  background-image: url(../../assets/block-1-sub-img-zh.png);
+}
+
+.en {
+  background-image: url(../../assets/block-1-sub-img-en.png);
 }
 
 @media only screen and (max-width: 750px) {
@@ -146,8 +153,8 @@
   }
 
   .imgsmall {
-    height: 456px;
-    width: 450px;
+    height: 436px;
+    width: 443px;
   }
 }
 
@@ -163,7 +170,7 @@
   }
 
   .imgsmall {
-    height: 536px;
+    height: 523px;
     width: 530px;
   }
 }

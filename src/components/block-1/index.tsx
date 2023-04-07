@@ -1,5 +1,6 @@
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
+import cn from 'classnames';
 import Container from '../basic/container';
 import Button from '../basic/button';
 import Icon from '../basic/icon';
@@ -62,7 +63,7 @@ const Block1 = () => {
           src={local === 'zh' ? blockBgZh : blockBgEn}
           className={s.img}
         />
-        <div className={s.imgsmall} />
+        <div className={cn(s.imgsmall, local === 'zh' ? s.zh : s.en)} />
       </div>
     </Container>
   );
