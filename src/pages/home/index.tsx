@@ -24,7 +24,7 @@ const Home = () => {
       path: "/",
       domain: ".langgenius.ai"
     };
-    cookie.save("utm", window.btoa(unescape(encodeURIComponent(JSON.stringify(utm)))), cookieSetup)
+    cookie.save("utm", window.btoa(JSON.stringify(utm)), cookieSetup)
   }, []);
 
   useEffect(() => {
