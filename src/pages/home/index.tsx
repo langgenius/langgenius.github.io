@@ -22,7 +22,7 @@ const Home = () => {
     }
     const cookieSetup = {
       path: "/",
-      domain: ".langgenius.dev"
+      domain: ".langgenius.ai"
     };
     cookie.save("utm", window.btoa(unescape(encodeURIComponent(JSON.stringify(utm)))), cookieSetup)
   }, []);
