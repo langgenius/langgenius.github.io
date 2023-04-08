@@ -7,10 +7,13 @@ import Icon from '../basic/icon';
 import s from './index.module.css';
 import blockBgEn from '../../assets/block-1-en.png';
 import blockBgZh from '../../assets/block-1-cn.png';
+import ChimpDialog from '../chimp-dialog';
+import { useState } from 'react';
 
 const Block1 = () => {
   const { t } = useTranslation();
   const local = i18next.language;
+  const [isChimpVisible, setIsChimpVisible] = useState(false)
   return (
     <Container className={s.container}>
       <div className={s.top}>
@@ -51,9 +54,9 @@ const Block1 = () => {
             <Icon type="github" className={s.btnicon} />
             {githubText}
           </Button> */}
-          <Button size="large" disable>
-            {t('体验云服务')}
-            <div className={s.coming}>{t('即将上线')}</div>
+          <Button size="large" onClick={() => setIsChimpVisible(true)}>
+            {t('参与内测')}
+            {/* <div className={s.coming}>{t('即将上线')}</div> */}
           </Button>
         </div>
       </div>
@@ -65,6 +68,7 @@ const Block1 = () => {
         />
         <div className={cn(s.imgsmall, local === 'zh' ? s.zh : s.en)} />
       </div>
+      <ChimpDialog open={isChimpVisible} onClose={() => setIsChimpVisible(false)} />
     </Container>
   );
 };
