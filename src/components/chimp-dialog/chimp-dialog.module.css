@@ -1,0 +1,140 @@
+.dialog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.modal {
+  flex: 0 0 auto;
+  position: relative;
+  padding: 40px;
+  width: 480px;
+  min-height: 100px;
+  text-align: left;
+  font-family: Inter;
+  background: #fff url('./assets/background.png') no-repeat 100% 0;
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  border-radius: 12px;
+}
+.modal.small {
+  background-image: url('./assets/background-small.png');
+}
+
+.emoji {
+  display: block;
+  margin-bottom: 4px;
+  width: 72px;
+  height: 72px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.envelope {
+  background-image: url('./assets/envelope.png');
+}
+
+.popper {
+  background-image: url('./assets/popper.png');
+}
+
+.heading {
+  margin: 4px 0;
+  line-height: 38px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.intro {
+  margin-bottom: 32px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4b5563;
+}
+
+.form {
+  margin-top: 26px;
+}
+
+.field {
+  display: block;
+}
+
+.field + .field {
+  margin-top: 4px;
+}
+
+.fieldName {
+  margin-bottom: 8px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.inputSet {
+  flex: 1 0 auto;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  height: 40px;
+  line-height: 20px;
+  font-size: 14px;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+}
+.briefInput {
+  height: 100px;
+  resize: none;
+}
+.input.isError {
+  border-color: #d92d20;
+  outline-color: #d92d20;
+}
+
+.error {
+  margin-top: 4px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #d92d20;
+}
+
+.submit {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.close {
+  width: 100%;
+}
+
+.tip {
+  margin-top: 16px;
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #667085;
+}
+
+.cross {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: center/16px no-repeat url('./assets/close.svg');
+  cursor: pointer;
+}

@@ -8,6 +8,7 @@ interface IProps {
   type?: "default" | "white";
   disable?: boolean;
   className?: string;
+  buttonType?: "button" | "submit" | "reset";
   [key: string]: any;
 }
 
@@ -18,12 +19,14 @@ const Button = ({
   disable = false,
   onClick,
   className,
+  buttonType = "button",
   ...restProps
 }: IProps) => {
   return (
     <button
       className={cn(s.btn, s[size], disable ? s.disable : s[type], className)}
       onClick={onClick}
+      type={buttonType}
       {...restProps}
     >
       {children}

@@ -3,10 +3,14 @@ import i18n from 'i18next';
 import Button from '../basic/button';
 import Link from '../basic/link';
 import s from './index.module.css';
+import ChimpDialog from '../chimp-dialog';
+import { useState } from 'react';
 
 const Header = () => {
   const { t } = useTranslation();
-  return(
+  const [isChimpVisible, setIsChimpVisible] = useState(false)
+
+  return (
     <nav className={s.header}>
       <div className={s.center}>
         <div className={s.ctrl}>
@@ -18,8 +22,9 @@ const Header = () => {
         </div>
         <div className={s.view}>
           <Link href='https://cloud.langgenius.ai' target="_blank">{t('登录')}</Link>
-          <Button>{t('获知更新')}</Button>
+          <Button onClick={() => setIsChimpVisible(true)}>{t('获知更新')}</Button>
         </div>
+        <ChimpDialog open={isChimpVisible} onClose={() => setIsChimpVisible(false)} />
       </div>
     </nav>
   );
