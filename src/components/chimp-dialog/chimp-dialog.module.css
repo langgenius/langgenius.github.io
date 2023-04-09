@@ -19,9 +19,12 @@
   min-height: 100px;
   text-align: left;
   font-family: Inter;
-  background: #fff;
+  background: #fff url('./assets/background.png') no-repeat 100% 0;
   box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
   border-radius: 12px;
+}
+.modal.small {
+  background-image: url('./assets/background-small.png');
 }
 
 .emoji {
@@ -43,7 +46,7 @@
 }
 
 .heading {
-  margin-bottom: 4px;
+  margin: 4px 0;
   line-height: 38px;
   font-size: 30px;
   font-weight: 600;
@@ -84,7 +87,7 @@
   display: block;
   width: 100%;
   padding: 10px 15px;
-  height: 36px;
+  height: 40px;
   line-height: 20px;
   font-size: 14px;
   border: 1px solid #EAECF0;
@@ -94,7 +97,7 @@
   height: 100px;
   resize: none;
 }
-.isError {
+.input.isError {
   border-color: #d92d20;
   outline-color: #d92d20;
 }
@@ -109,7 +112,7 @@
 }
 
 .submit {
-  margin-top: 16px;
+  margin-top: 8px;
   width: 100%;
 }
 

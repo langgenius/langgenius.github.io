@@ -127,7 +127,7 @@ const ChimpDialog = ({
 
   return open ? (
     <div className={style.dialog} onClick={onClose}>
-      <div className={style.modal} onClick={e => e.stopPropagation()}>
+      <div className={classNames(style.modal, formState !== 'filling' && style.small)} onClick={e => e.stopPropagation()}>
         {formState === 'filling' ? (
           <>
             <span className={classNames(style.emoji, style.envelope)} />
