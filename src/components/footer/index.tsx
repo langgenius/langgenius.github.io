@@ -25,7 +25,7 @@ const Footer = () => {
       props: {
         href: `https://docs.langgenius.ai${
           i18next.language === 'zh' ? '/zh-hans' : ''
-        }/application/backend-as-a-service`,
+        }/application/developing-with-apis`,
         target: '_blank',
         rel: 'noreferrer',
       },
