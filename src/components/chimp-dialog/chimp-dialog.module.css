@@ -66,7 +66,7 @@
 }
 
 .field + .field {
-  margin-top: 16px;
+  margin-top: 4px;
 }
 
 .fieldName {
@@ -81,6 +81,7 @@
 }
 
 .input {
+  display: block;
   width: 100%;
   padding: 10px 15px;
   height: 36px;
@@ -88,20 +89,22 @@
   font-size: 14px;
   border: 1px solid #EAECF0;
   border-radius: 8px;
-  transition: outline 0.2s ease-in;
-}
-.input:not(:focus) {
-  outline: 2px solid transparent;
 }
 .briefInput {
   height: 100px;
   resize: none;
 }
+.isError {
+  border-color: #d92d20;
+  outline-color: #d92d20;
+}
 
 .error {
-  height: 20px;
-  line-height: 20px;
-  font-size: 14px;
+  margin-top: 4px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 400;
   color: #d92d20;
 }
 

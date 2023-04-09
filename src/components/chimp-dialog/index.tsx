@@ -26,7 +26,7 @@ type ValidationResult = {
   error: string
 }
 
-const chimpUrl = 'https://langgenius.us12.list-manage.com/subscribe/post-json?u=9fe281ea555091f91d5183066&amp;id=668e3674f6&amp;f_id=00de6ee0f0'
+const chimpUrl = 'https://langgenius.us12.list-manage.com/subscribe/post-json?u=9fe281ea555091f91d5183066&id=668e3674f6&f_id=00de6ee0f0&tags=10504697&b_9fe281ea555091f91d5183066_668e3674f6=&subscribe=Subscribe'
 
 const ChimpDialog = ({
   open = true,
@@ -82,7 +82,7 @@ const ChimpDialog = ({
       if (isForced) {
         return {
           success: false,
-          error: t('简单介绍你自己'),
+          error: t('请简单介绍你自己'),
         }
       } else {
         return {
@@ -105,6 +105,7 @@ const ChimpDialog = ({
     setBriefValidationResult(validateBrief(briefInputRef.current?.value))
   }, [validateBrief])
 
+  const isSubmittingRef = useRef(false)
   const submit = useCallback(() => {
     const email = emailInputRef.current?.value
     const brief = briefInputRef.current?.value
@@ -112,8 +113,10 @@ const ChimpDialog = ({
     setEmailValidationResult(emailValidation)
     const briefValidation = validateBrief(brief, true)
     setBriefValidationResult(briefValidation)
-    if (emailValidation.success && briefValidation.success) {
+    if (!isSubmittingRef.current && emailValidation.success && briefValidation.success) {
+      isSubmittingRef.current = true
       jsonp(`${chimpUrl}&EMAIL=${emailValidation.data}&MMERGE6=${brief}`, { param: 'c' }, (error, result) => {
+        isSubmittingRef.current = false
         if (!error) {
           console.log('result', result)
           setFormState('success')
@@ -134,14 +137,33 @@ const ChimpDialog = ({
               <label className={style.field}>
                 <div className={style.fieldName}>{t('Email')}</div>
                 <div className={style.inputSet}>
-                  <input name="email" className={style.input} ref={emailInputRef} onInput={looseValidateEmail} placeholder={t('你的 Email') || ''} />
+                  <input
+                    name="email"
+                    className={classNames(
+                      style.input,
+                      emailValidationResult && emailValidationResult.success === false && style.isError
+                    )}
+                    ref={emailInputRef}
+                    onInput={looseValidateEmail}
+                    placeholder={t('你的 Email') || ''}
+                  />
                   <div className={style.error}>{emailValidationResult?.success === false ? emailValidationResult.error : ''}</div>
                 </div>
               </label>
               <label className={style.field}>
                 <div className={style.fieldName}>{t('简单介绍你自己')}</div>
                 <div className={style.inputSet}>
-                  <textarea name="brief" className={classNames(style.input, style.briefInput)} ref={briefInputRef} onInput={looseValidateBrief} placeholder={t('简单介绍你自己') || ''} />
+                  <textarea
+                    name="brief"
+                    className={classNames(
+                      style.input,
+                      style.briefInput,
+                      briefValidationResult && briefValidationResult.success === false && style.isError
+                    )}
+                    ref={briefInputRef}
+                    onInput={looseValidateBrief}
+                    placeholder={t('简单介绍你自己') || ''}
+                  />
                   <div className={style.error}>{briefValidationResult?.success === false ? briefValidationResult.error : ''}</div>
                 </div>
               </label>
