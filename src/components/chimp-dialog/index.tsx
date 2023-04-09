@@ -107,6 +107,8 @@ const ChimpDialog = ({
 
   const isSubmittingRef = useRef(false)
   const submit = useCallback(() => {
+    window.gtag_report_conversion()
+
     const email = emailInputRef.current?.value
     const brief = briefInputRef.current?.value
     const emailValidation = validateEmail(email, true)
