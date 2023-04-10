@@ -11,6 +11,14 @@ const Footer = () => {
   const [t] = useTranslation();
   const list1 = [
     {
+      text: t('Blog'),
+      props: {
+        href: `https://blog.langgenius.ai`,
+        target: '_blank',
+        rel: 'noreferrer',
+      },
+    },
+    {
       text: t('Support'),
       props: {
         href: `https://docs.langgenius.ai${
