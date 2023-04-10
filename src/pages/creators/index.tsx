@@ -147,7 +147,7 @@ const Creators = () => {
                   </div>
                   <div className={s.linkItem}>
                     <div className={s.logoDiscord}/>
-                    <a className={s.extraLink}>Discord</a>
+                    <a className={s.extraLink} target="_blank" rel="noreferrer" href="https://discord.gg/AhzKf7dNgk">Discord</a>
                   </div>
                 </div>
               </div>

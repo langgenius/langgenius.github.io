@@ -39,7 +39,15 @@ const Footer = () => {
         rel: 'noreferrer',
       },
     },
-    { icon: 'discord', text: 'Discord' },
+    {
+      icon: 'discord',
+      text: t('Discord'),
+      props: {
+        href: 'https://discord.gg/AhzKf7dNgk',
+        target: '_blank',
+        rel: 'noreferrer',
+      },
+    },
   ];
 
   const list2 = [
