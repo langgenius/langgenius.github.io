@@ -1,28 +1,29 @@
-import i18next from 'i18next';
-import { useTranslation } from 'react-i18next';
-import cn from 'classnames';
-import Container from '../basic/container';
-import Button from '../basic/button';
-import Icon from '../basic/icon';
-import s from './index.module.css';
-import blockBgEn from '../../assets/block-1-en.png';
-import blockBgZh from '../../assets/block-1-cn.png';
-import ChimpDialog from '../chimp-dialog';
-import { useState } from 'react';
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
+import cn from "classnames";
+import Container from "../basic/container";
+import Button from "../basic/button";
+import Icon from "../basic/icon";
+import s from "./index.module.css";
+import blockBgEn from "../../assets/block-1-en.png";
+import blockBgZh from "../../assets/block-1-cn.png";
+// import ChimpDialog from "../chimp-dialog";
+// import { useState } from "react";
 
 const Block1 = () => {
   const { t } = useTranslation();
   const local = i18next.language;
-  const [isChimpVisible, setIsChimpVisible] = useState(false)
+  // const [isChimpVisible, setIsChimpVisible] = useState(false);
+  // const [githubText, setGithubText] = useState(t("Github"));
   return (
     <Container className={s.container}>
       <div className={s.top}>
         <div className={s.alph}>
           <Button size="small">
             <Icon type="horn" className={s.r} />
-            {t('内测进行中')}
+            {t("内测进行中")}
           </Button>
-          <div className={s.text}>{t('Inside announcement text')}</div>
+          <div className={s.text}>{t("Inside announcement text")}</div>
           {/* <a
             className={s.link}
             target="_blank"
@@ -35,27 +36,31 @@ const Block1 = () => {
             <Icon type="arrow-blue-left" className={s.l} />
           </a> */}
         </div>
-        <div className={s.title}>{t('10 倍速创作你的 AI 应用')}</div>
+        <div className={s.title}>{t("10 倍速创作你的 AI 应用")}</div>
         <div className={s.tip}>
           {t(
-            '快速、直观地开发可运营的 GPT 应用。即使是非开发人员也能轻松完成。'
+            "快速、直观地开发可运营的 GPT 应用。即使是非开发人员也能轻松完成。"
           )}
         </div>
         <div className={s.tip}>
-          {t('LangGenius 正在进步成为最好的开源 LLMOps 平台。')}
+          {t("LangGenius 正在进步成为最好的开源 LLMOps 平台。")}
         </div>
         <div className={s.btn}>
-          {/* <Button
+          <Button
             size="large"
             type="white"
-            onMouseEnter={() => setGithubText("Coming soon")}
-            onMouseLeave={() => setGithubText("   Github  ")}
+            onClick={() =>
+              window.open("https://github.com/langgenius/langgenius", "_blank")
+            }
           >
             <Icon type="github" className={s.btnicon} />
-            {githubText}
-          </Button> */}
-          <Button size="large" onClick={() => setIsChimpVisible(true)}>
-            {t('参与内测')}
+            Github
+          </Button>
+          <Button
+            size="large"
+            onClick={() => window.open("https://cloud.langgenius.ai", "_blank")}
+          >
+            {t("体验云服务")}
             {/* <div className={s.coming}>{t('即将上线')}</div> */}
           </Button>
         </div>
@@ -63,12 +68,15 @@ const Block1 = () => {
       <div className={s.imgcontainer}>
         <img
           alt=""
-          src={local === 'zh' ? blockBgZh : blockBgEn}
+          src={local === "zh" ? blockBgZh : blockBgEn}
           className={s.img}
         />
-        <div className={cn(s.imgsmall, local === 'zh' ? s.zh : s.en)} />
+        <div className={cn(s.imgsmall, local === "zh" ? s.zh : s.en)} />
       </div>
-      <ChimpDialog open={isChimpVisible} onClose={() => setIsChimpVisible(false)} />
+      {/* <ChimpDialog
+        open={isChimpVisible}
+        onClose={() => setIsChimpVisible(false)}
+      /> */}
     </Container>
   );
 };
