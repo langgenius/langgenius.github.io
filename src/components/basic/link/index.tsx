@@ -8,9 +8,9 @@ interface IProps {
   [key: string]: any;
 }
 
-const Link = ({ children, href, target, restProps }: IProps) => {
+const Link = ({ children, href, target, onClick, restProps }: IProps) => {
   return (
-    <a className={s.link} href={href} target={target} { ...restProps }>
+    <a className={s.link} href={href} target={target} onClick={onClick} { ...restProps }>
       {children}
     </a>
   );

@@ -7,6 +7,7 @@ import Icon from "../basic/icon";
 import s from "./index.module.css";
 import blockBgEn from "../../assets/block-1-en.png";
 import blockBgZh from "../../assets/block-1-cn.png";
+import { useCallback } from "react";
 // import ChimpDialog from "../chimp-dialog";
 // import { useState } from "react";
 
@@ -15,6 +16,11 @@ const Block1 = () => {
   const local = i18next.language;
   // const [isChimpVisible, setIsChimpVisible] = useState(false);
   // const [githubText, setGithubText] = useState(t("Github"));
+  const onTryCloud = useCallback(() => {
+    window.gtag_report_conversion();
+    window.open("https://cloud.langgenius.ai", "_blank");
+
+  }, []);
   return (
     <Container className={s.container}>
       <div className={s.top}>
@@ -58,7 +64,7 @@ const Block1 = () => {
           </Button>
           <Button
             size="large"
-            onClick={() => window.open("https://cloud.langgenius.ai", "_blank")}
+            onClick={onTryCloud}
           >
             {t("体验云服务")}
             {/* <div className={s.coming}>{t('即将上线')}</div> */}
