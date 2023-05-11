@@ -84,10 +84,10 @@ const Creators = () => {
                 <div className={s.name}>Pengfei L.</div>
                 <div className={s.role}>Website Designer</div>
               </div>
-              {/* <div className={cn(s.profile, s.jyong)}>
+              <div className={cn(s.profile, s.jyong)}>
                 <div className={s.name}>Jyong</div>
                 <div className={s.role}>Backend</div>
-              </div> */}
+              </div>
             </div>
             <div className={s.line}></div>
             <div className={s.thanks}>The growth of LangGenius wouldn't be possible without the support of open-source communities like GitHub, especially our contributors. A special shoutout to <a className={s.link} target="_blank" rel="noreferrer" href="https://www.apidog.com">Apidog</a> for their invaluable help.</div>
