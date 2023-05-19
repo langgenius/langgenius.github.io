@@ -143,11 +143,11 @@ const Creators = () => {
                 <div className={s.extraLinks}>
                   <div className={s.linkItem}>
                     <div className={s.logoGithub}/>
-                    <a className={s.extraLink} target="_blank" rel="noreferrer" href="https://github.com/langgenius">GitHub</a>
+                    <a className={s.extraLink} target="_blank" rel="noreferrer" href="https://github.com/langgenius/dify">GitHub</a>
                   </div>
                   <div className={s.linkItem}>
                     <div className={s.logoDiscord}/>
-                    <a className={s.extraLink} target="_blank" rel="noreferrer" href="https://discord.gg/AhzKf7dNgk">Discord</a>
+                    <a className={s.extraLink} target="_blank" rel="noreferrer" href="https://discord.gg/FngNHpbcY7">Discord</a>
                   </div>
                 </div>
               </div>
@@ -157,7 +157,7 @@ const Creators = () => {
                 <div className={s.contactText}>Email us for general queries, including marketing and partnership opportunities.</div>
                 <div className={s.extraLinks}>
                   <div className={s.linkItem}>
-                    <a href="mailto:hello@langgenius.ai" className={s.extraLinkActive}>hello@langgenius.ai</a>
+                    <a href="mailto:hello@dify.ai" className={s.extraLinkActive}>hello@dify.ai</a>
                   </div>
                 </div>
               </div>
