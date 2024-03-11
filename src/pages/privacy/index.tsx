@@ -9,7 +9,7 @@ const Privacy = () => {
         <div className={s.timestamp}>Latest update: March 21, 2023</div>
       </div>
       <section className={s.section}>
-        <p className={cn(s.text, s['text-margin'])}>Welcome to LangGenius. LangGenius, Inc. (hereinafter referred to as"LangGenius", "we","our" or "us" ) respects your privacy and is committed to protecting your personal information. This privacy policy is intended to explain how we collect, use, protect, and share the information you provide when using LangGenius services.</p>
+        <p className={cn(s.text, s['text-margin'])}>Welcome to Dify.AI. LangGenius, Inc. (hereinafter referred to as "LangGenius") operates the Dify.AI service as one of its products. Throughout this Privacy Policy, references to "Dify," "Dify.AI," "we," "us," "our," and similar terms refer to LangGenius and its affiliates, including but not limited to Dify.AI. By using the Dify.AI service, you acknowledge and agree that LangGenius is the entity responsible for the collection, use, and protection of your personal information as described in this Privacy Policy.</p>
         <p className={cn(s.text, s.bold)}>Please carefully read this Policy before you use or submit any information through or in connection with the Services. If you do not agree with this Policy, please do not access or use our Services or interact with any other aspect of our business. Unless otherwise required by laws in your residence, by using our Services, you accept our privacy practices described in this Policy.</p>
       </section>
       <section className={s.section}>
@@ -24,7 +24,7 @@ const Privacy = () => {
             <p className={cn(s.text, s['text-margin'])}><span className={s.bold}>Account and profile information.</span> When you register for an account, create or modify your profile, set preferences, sign-up for or make purchases through the Services, we collect information about you which includes without limitation your name, business telephone number and your email address, passwords, and similar security information used for authentication and account access. You may also choose to provide us with a display name, profile photo, job title, and other details to your profile information to be displayed in our Services.</p>
           </li>
           <li>
-            <p className={cn(s.text, s['text-margin'])}><span className={s.bold}>Content you provide through our products:</span> As part of the service, we collect and store the content you post, send, receive, and share through our product. This includes any data you enter in any "free text" box on our product, as well as files and links you upload to the service. Examples of the content we collect and store include: applications you create in LangGenius, descriptions of application-related commands, links to access applications, links to privacy policies for applications, or any other information you provide.</p>
+            <p className={cn(s.text, s['text-margin'])}><span className={s.bold}>Content you provide through our products:</span> As part of the service, we collect and store the content you post, send, receive, and share through our product. This includes any data you enter in any "free text" box on our product, as well as files and links you upload to the service. Examples of the content we collect and store include: applications you create in Dify.AI, descriptions of application-related commands, links to access applications, links to privacy policies for applications, or any other information you provide.</p>
           </li>
           <li>
             <p className={cn(s.text, s['text-margin'])}><span className={s.bold}>Content provided by you through community platforms, instant messaging tools, or our website:</span> We also collect other content that you submit to us for operation of website channels (such as social media or social networking sites). For example, when you provide feedback or participate in any interactive features, surveys, contests, promotions, sweepstakes, events, or activities, you provide content to us through phone, community interaction, IM services, etc. (such as GitHub, Twitter, Discord, WeChat, Slack, etc.)</p>
@@ -33,7 +33,7 @@ const Privacy = () => {
             <p className={cn(s.text, s['text-margin'])}><span className={s.bold}>Information provided through our support channels:</span> Through our user support, you can choose to submit information about any issues you encounter while using our services. You may contact us through email, third-party IM tools to directly communicate with our support team. You will be asked to provide contact information, a summary of the issue you are facing, and any additional documents, screenshots, or information that may help to resolve the problem.</p>
           </li>
           <li>
-            <p className={s.text}><span className={s.bold}>Payment and billing information:</span> When you use certain paid services on LangGenius, we collect your payment and billing information. You may also be required to provide credit card information  to third-party secure payment processing service providers (such as Stripe). We do not store your credit card information.</p>
+            <p className={s.text}><span className={s.bold}>Payment and billing information:</span> When you use certain paid services on Dify.AI, we collect your payment and billing information. You may also be required to provide credit card information  to third-party secure payment processing service providers (such as Stripe). We do not store your credit card information.</p>
           </li>
         </ul>
       </section>
@@ -187,7 +187,7 @@ const Privacy = () => {
         <h2 className={s.h2}>How to contact us?</h2>
         <p className={cn(s.text, s['text-margin'])}>Your information is controlled by LangGenius. If you have questions or concerns about how your information is handled, please direct your inquiry to LangGenius, which is responsible for facilitating such inquiries.</p>
         <p className={cn(s.text, s['text-margin'])}>LangGenius, Inc., a Delaware registered company (File No. 7358523), USA.</p>
-        <p className={s.text}>Email: <a style={{ position: 'relative', zIndex: 2}} href="mailto:hello@langgenius.ai" className={s.link}>hello@langgenius.ai</a></p>
+        <p className={s.text}>Email: <a style={{ position: 'relative', zIndex: 2}} href="mailto:hello@dify.ai" className={s.link}>hello@dify.ai</a></p>
       </section>
     </div>
   );
